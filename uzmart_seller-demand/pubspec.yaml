@@ -44,7 +44,7 @@ dependencies:
   flutter_slidable: ^3.0.1
   phone_text_field: ^0.0.6
   flutter_riverpod: ^2.5.1
-  connectivity_plus: ^6.1.1
+  connectivity_plus: ^5.0.0
   percent_indicator: ^4.2.3
   just_the_tooltip: ^0.0.12
   sliding_up_panel: ^2.0.0+1
