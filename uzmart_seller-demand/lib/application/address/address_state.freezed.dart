@@ -21,7 +21,9 @@ mixin _$AddressState {
   bool get isLoading => throw _privateConstructorUsedError;
   bool get isCityLoading => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AddressState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AddressStateCopyWith<AddressState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -49,6 +51,8 @@ class _$AddressStateCopyWithImpl<$Res, $Val extends AddressState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AddressState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -101,6 +105,8 @@ class __$$AddressStateImplCopyWithImpl<$Res>
       _$AddressStateImpl _value, $Res Function(_$AddressStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AddressState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -193,7 +199,9 @@ class _$AddressStateImpl implements _AddressState {
       isLoading,
       isCityLoading);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AddressState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AddressStateImplCopyWith<_$AddressStateImpl> get copyWith =>
@@ -215,8 +223,11 @@ abstract class _AddressState implements AddressState {
   bool get isLoading;
   @override
   bool get isCityLoading;
+
+  /// Create a copy of AddressState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AddressStateImplCopyWith<_$AddressStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

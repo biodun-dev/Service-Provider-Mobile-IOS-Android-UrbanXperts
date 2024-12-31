@@ -20,7 +20,9 @@ mixin _$WorkingDaysState {
   int get currentIndex => throw _privateConstructorUsedError;
   List<WorkingDay> get workingDays => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of WorkingDaysState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $WorkingDaysStateCopyWith<WorkingDaysState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -44,6 +46,8 @@ class _$WorkingDaysStateCopyWithImpl<$Res, $Val extends WorkingDaysState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of WorkingDaysState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -87,6 +91,8 @@ class __$$WorkingDaysStateImplCopyWithImpl<$Res>
       $Res Function(_$WorkingDaysStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of WorkingDaysState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -158,7 +164,9 @@ class _$WorkingDaysStateImpl extends _WorkingDaysState {
   int get hashCode => Object.hash(runtimeType, isLoading, currentIndex,
       const DeepCollectionEquality().hash(_workingDays));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of WorkingDaysState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$WorkingDaysStateImplCopyWith<_$WorkingDaysStateImpl> get copyWith =>
@@ -179,8 +187,11 @@ abstract class _WorkingDaysState extends WorkingDaysState {
   int get currentIndex;
   @override
   List<WorkingDay> get workingDays;
+
+  /// Create a copy of WorkingDaysState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$WorkingDaysStateImplCopyWith<_$WorkingDaysStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

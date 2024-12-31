@@ -26,7 +26,9 @@ mixin _$MasterWorkingDaysState {
   List<ClosedDates> get closedDays => throw _privateConstructorUsedError;
   List<DisableTimes> get disableTimes => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MasterWorkingDaysState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MasterWorkingDaysStateCopyWith<MasterWorkingDaysState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -60,6 +62,8 @@ class _$MasterWorkingDaysStateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MasterWorkingDaysState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -145,6 +149,8 @@ class __$$MasterWorkingDaysStateImplCopyWithImpl<$Res>
       $Res Function(_$MasterWorkingDaysStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MasterWorkingDaysState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -305,7 +311,9 @@ class _$MasterWorkingDaysStateImpl extends _MasterWorkingDaysState {
       const DeepCollectionEquality().hash(_closedDays),
       const DeepCollectionEquality().hash(_disableTimes));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MasterWorkingDaysState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MasterWorkingDaysStateImplCopyWith<_$MasterWorkingDaysStateImpl>
@@ -344,8 +352,11 @@ abstract class _MasterWorkingDaysState extends MasterWorkingDaysState {
   List<ClosedDates> get closedDays;
   @override
   List<DisableTimes> get disableTimes;
+
+  /// Create a copy of MasterWorkingDaysState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MasterWorkingDaysStateImplCopyWith<_$MasterWorkingDaysStateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

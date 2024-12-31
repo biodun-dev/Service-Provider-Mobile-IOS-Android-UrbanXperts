@@ -22,7 +22,9 @@ mixin _$ShopState {
   ShopData? get shop => throw _privateConstructorUsedError;
   int? get categoryId => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ShopState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ShopStateCopyWith<ShopState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -50,6 +52,8 @@ class _$ShopStateCopyWithImpl<$Res, $Val extends ShopState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ShopState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -108,6 +112,8 @@ class __$$ShopStateImplCopyWithImpl<$Res>
       _$ShopStateImpl _value, $Res Function(_$ShopStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ShopState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -190,7 +196,9 @@ class _$ShopStateImpl extends _ShopState {
   int get hashCode => Object.hash(runtimeType, isLoading, backgroundImageFile,
       logoImageFile, shop, categoryId);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ShopState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ShopStateImplCopyWith<_$ShopStateImpl> get copyWith =>
@@ -216,8 +224,11 @@ abstract class _ShopState extends ShopState {
   ShopData? get shop;
   @override
   int? get categoryId;
+
+  /// Create a copy of ShopState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ShopStateImplCopyWith<_$ShopStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

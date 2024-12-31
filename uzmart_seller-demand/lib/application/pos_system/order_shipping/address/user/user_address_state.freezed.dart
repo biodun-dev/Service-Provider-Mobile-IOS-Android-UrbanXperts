@@ -19,7 +19,9 @@ mixin _$UserAddressState {
   List<MyAddress> get list => throw _privateConstructorUsedError;
   bool get isLoading => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of UserAddressState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $UserAddressStateCopyWith<UserAddressState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -43,6 +45,8 @@ class _$UserAddressStateCopyWithImpl<$Res, $Val extends UserAddressState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of UserAddressState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -81,6 +85,8 @@ class __$$UserAddressStateImplCopyWithImpl<$Res>
       $Res Function(_$UserAddressStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of UserAddressState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -140,7 +146,9 @@ class _$UserAddressStateImpl extends _UserAddressState {
   int get hashCode => Object.hash(
       runtimeType, const DeepCollectionEquality().hash(_list), isLoading);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of UserAddressState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$UserAddressStateImplCopyWith<_$UserAddressStateImpl> get copyWith =>
@@ -158,8 +166,11 @@ abstract class _UserAddressState extends UserAddressState {
   List<MyAddress> get list;
   @override
   bool get isLoading;
+
+  /// Create a copy of UserAddressState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$UserAddressStateImplCopyWith<_$UserAddressStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

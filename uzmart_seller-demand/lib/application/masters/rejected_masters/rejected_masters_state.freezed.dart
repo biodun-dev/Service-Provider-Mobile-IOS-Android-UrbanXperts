@@ -20,7 +20,9 @@ mixin _$RejectedMastersState {
   List<UserData> get users => throw _privateConstructorUsedError;
   int get totalCount => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of RejectedMastersState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $RejectedMastersStateCopyWith<RejectedMastersState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -45,6 +47,8 @@ class _$RejectedMastersStateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of RejectedMastersState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -88,6 +92,8 @@ class __$$RejectedMastersStateImplCopyWithImpl<$Res>
       $Res Function(_$RejectedMastersStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of RejectedMastersState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -159,7 +165,9 @@ class _$RejectedMastersStateImpl extends _RejectedMastersState {
   int get hashCode => Object.hash(runtimeType, isLoading,
       const DeepCollectionEquality().hash(_users), totalCount);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of RejectedMastersState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$RejectedMastersStateImplCopyWith<_$RejectedMastersStateImpl>
@@ -181,8 +189,11 @@ abstract class _RejectedMastersState extends RejectedMastersState {
   List<UserData> get users;
   @override
   int get totalCount;
+
+  /// Create a copy of RejectedMastersState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$RejectedMastersStateImplCopyWith<_$RejectedMastersStateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

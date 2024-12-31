@@ -27,7 +27,9 @@ mixin _$ProductsFilterState {
   List<int> get prices => throw _privateConstructorUsedError;
   RangeValues? get rangeValues => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ProductsFilterState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ProductsFilterStateCopyWith<ProductsFilterState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -61,6 +63,8 @@ class _$ProductsFilterStateCopyWithImpl<$Res, $Val extends ProductsFilterState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ProductsFilterState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -149,6 +153,8 @@ class __$$ProductsFilterStateImplCopyWithImpl<$Res>
       $Res Function(_$ProductsFilterStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ProductsFilterState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -329,7 +335,9 @@ class _$ProductsFilterStateImpl implements _ProductsFilterState {
       const DeepCollectionEquality().hash(_prices),
       rangeValues);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ProductsFilterState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ProductsFilterStateImplCopyWith<_$ProductsFilterStateImpl> get copyWith =>
@@ -370,8 +378,11 @@ abstract class _ProductsFilterState implements ProductsFilterState {
   List<int> get prices;
   @override
   RangeValues? get rangeValues;
+
+  /// Create a copy of ProductsFilterState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ProductsFilterStateImplCopyWith<_$ProductsFilterStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -20,7 +20,9 @@ mixin _$ProductExtrasState {
   bool get isSaving => throw _privateConstructorUsedError;
   List<Group> get groups => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ProductExtrasState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ProductExtrasStateCopyWith<ProductExtrasState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -44,6 +46,8 @@ class _$ProductExtrasStateCopyWithImpl<$Res, $Val extends ProductExtrasState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ProductExtrasState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -87,6 +91,8 @@ class __$$ProductExtrasStateImplCopyWithImpl<$Res>
       $Res Function(_$ProductExtrasStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ProductExtrasState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -157,7 +163,9 @@ class _$ProductExtrasStateImpl extends _ProductExtrasState {
   int get hashCode => Object.hash(runtimeType, isLoading, isSaving,
       const DeepCollectionEquality().hash(_groups));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ProductExtrasState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ProductExtrasStateImplCopyWith<_$ProductExtrasStateImpl> get copyWith =>
@@ -178,8 +186,11 @@ abstract class _ProductExtrasState extends ProductExtrasState {
   bool get isSaving;
   @override
   List<Group> get groups;
+
+  /// Create a copy of ProductExtrasState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ProductExtrasStateImplCopyWith<_$ProductExtrasStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

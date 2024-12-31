@@ -21,7 +21,9 @@ mixin _$ServiceFaqsState {
   List<FaqData> get faqs => throw _privateConstructorUsedError;
   ServiceData? get service => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ServiceFaqsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ServiceFaqsStateCopyWith<ServiceFaqsState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -49,6 +51,8 @@ class _$ServiceFaqsStateCopyWithImpl<$Res, $Val extends ServiceFaqsState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ServiceFaqsState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -101,6 +105,8 @@ class __$$ServiceFaqsStateImplCopyWithImpl<$Res>
       $Res Function(_$ServiceFaqsStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ServiceFaqsState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -182,7 +188,9 @@ class _$ServiceFaqsStateImpl extends _ServiceFaqsState {
   int get hashCode => Object.hash(runtimeType, isLoading, isSaving,
       const DeepCollectionEquality().hash(_faqs), service);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ServiceFaqsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ServiceFaqsStateImplCopyWith<_$ServiceFaqsStateImpl> get copyWith =>
@@ -206,8 +214,11 @@ abstract class _ServiceFaqsState extends ServiceFaqsState {
   List<FaqData> get faqs;
   @override
   ServiceData? get service;
+
+  /// Create a copy of ServiceFaqsState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ServiceFaqsStateImplCopyWith<_$ServiceFaqsStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

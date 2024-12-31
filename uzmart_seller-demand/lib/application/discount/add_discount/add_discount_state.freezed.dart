@@ -27,7 +27,9 @@ mixin _$AddDiscountState {
   TextEditingController? get dateController =>
       throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AddDiscountState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AddDiscountStateCopyWith<AddDiscountState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -60,6 +62,8 @@ class _$AddDiscountStateCopyWithImpl<$Res, $Val extends AddDiscountState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AddDiscountState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -142,6 +146,8 @@ class __$$AddDiscountStateImplCopyWithImpl<$Res>
       $Res Function(_$AddDiscountStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AddDiscountState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -280,7 +286,9 @@ class _$AddDiscountStateImpl extends _AddDiscountState {
       endDate,
       dateController);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AddDiscountState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AddDiscountStateImplCopyWith<_$AddDiscountStateImpl> get copyWith =>
@@ -319,8 +327,11 @@ abstract class _AddDiscountState extends AddDiscountState {
   DateTime? get endDate;
   @override
   TextEditingController? get dateController;
+
+  /// Create a copy of AddDiscountState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AddDiscountStateImplCopyWith<_$AddDiscountStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

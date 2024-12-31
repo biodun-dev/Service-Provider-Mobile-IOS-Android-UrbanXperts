@@ -18,7 +18,9 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$CreateNewGroupItemState {
   bool get isLoading => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CreateNewGroupItemState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CreateNewGroupItemStateCopyWith<CreateNewGroupItemState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -43,6 +45,8 @@ class _$CreateNewGroupItemStateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CreateNewGroupItemState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -79,6 +83,8 @@ class __$$CreateNewGroupItemStateImplCopyWithImpl<$Res>
       $Res Function(_$CreateNewGroupItemStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CreateNewGroupItemState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -119,7 +125,9 @@ class _$CreateNewGroupItemStateImpl extends _CreateNewGroupItemState {
   @override
   int get hashCode => Object.hash(runtimeType, isLoading);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CreateNewGroupItemState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CreateNewGroupItemStateImplCopyWith<_$CreateNewGroupItemStateImpl>
@@ -134,8 +142,11 @@ abstract class _CreateNewGroupItemState extends CreateNewGroupItemState {
 
   @override
   bool get isLoading;
+
+  /// Create a copy of CreateNewGroupItemState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CreateNewGroupItemStateImplCopyWith<_$CreateNewGroupItemStateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

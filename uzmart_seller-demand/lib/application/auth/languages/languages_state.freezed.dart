@@ -21,7 +21,9 @@ mixin _$LanguagesState {
   bool get isLoading => throw _privateConstructorUsedError;
   bool get isSelectLanguage => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of LanguagesState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $LanguagesStateCopyWith<LanguagesState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -49,6 +51,8 @@ class _$LanguagesStateCopyWithImpl<$Res, $Val extends LanguagesState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LanguagesState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -101,6 +105,8 @@ class __$$LanguagesStateImplCopyWithImpl<$Res>
       _$LanguagesStateImpl _value, $Res Function(_$LanguagesStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LanguagesState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -187,7 +193,9 @@ class _$LanguagesStateImpl extends _LanguagesState {
       isLoading,
       isSelectLanguage);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of LanguagesState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$LanguagesStateImplCopyWith<_$LanguagesStateImpl> get copyWith =>
@@ -211,8 +219,11 @@ abstract class _LanguagesState extends LanguagesState {
   bool get isLoading;
   @override
   bool get isSelectLanguage;
+
+  /// Create a copy of LanguagesState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$LanguagesStateImplCopyWith<_$LanguagesStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -19,7 +19,9 @@ mixin _$DiscountState {
   bool get isLoading => throw _privateConstructorUsedError;
   List<DiscountData> get discounts => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DiscountState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DiscountStateCopyWith<DiscountState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -43,6 +45,8 @@ class _$DiscountStateCopyWithImpl<$Res, $Val extends DiscountState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DiscountState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -81,6 +85,8 @@ class __$$DiscountStateImplCopyWithImpl<$Res>
       _$DiscountStateImpl _value, $Res Function(_$DiscountStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DiscountState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -140,7 +146,9 @@ class _$DiscountStateImpl extends _DiscountState {
   int get hashCode => Object.hash(
       runtimeType, isLoading, const DeepCollectionEquality().hash(_discounts));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DiscountState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DiscountStateImplCopyWith<_$DiscountStateImpl> get copyWith =>
@@ -157,8 +165,11 @@ abstract class _DiscountState extends DiscountState {
   bool get isLoading;
   @override
   List<DiscountData> get discounts;
+
+  /// Create a copy of DiscountState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DiscountStateImplCopyWith<_$DiscountStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

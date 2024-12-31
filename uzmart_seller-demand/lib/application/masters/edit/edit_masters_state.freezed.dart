@@ -21,7 +21,9 @@ mixin _$EditMastersState {
   String? get imageFile => throw _privateConstructorUsedError;
   UserData? get master => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditMastersState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $EditMastersStateCopyWith<EditMastersState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -46,6 +48,8 @@ class _$EditMastersStateCopyWithImpl<$Res, $Val extends EditMastersState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EditMastersState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -95,6 +99,8 @@ class __$$EditMastersStateImplCopyWithImpl<$Res>
       $Res Function(_$EditMastersStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EditMastersState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -169,7 +175,9 @@ class _$EditMastersStateImpl extends _EditMastersState {
   int get hashCode =>
       Object.hash(runtimeType, isLoading, isUpdating, imageFile, master);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditMastersState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EditMastersStateImplCopyWith<_$EditMastersStateImpl> get copyWith =>
@@ -193,8 +201,11 @@ abstract class _EditMastersState extends EditMastersState {
   String? get imageFile;
   @override
   UserData? get master;
+
+  /// Create a copy of EditMastersState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EditMastersStateImplCopyWith<_$EditMastersStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

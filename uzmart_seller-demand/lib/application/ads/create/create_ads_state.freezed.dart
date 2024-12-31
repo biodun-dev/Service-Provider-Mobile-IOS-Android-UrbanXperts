@@ -20,7 +20,9 @@ mixin _$CreateExtrasGroupState {
   List<ProductData> get products => throw _privateConstructorUsedError;
   AdsPackage? get package => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CreateExtrasGroupState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CreateExtrasGroupStateCopyWith<CreateExtrasGroupState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -45,6 +47,8 @@ class _$CreateExtrasGroupStateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CreateExtrasGroupState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -91,6 +95,8 @@ class __$$CreateExtrasGroupStateImplCopyWithImpl<$Res>
       $Res Function(_$CreateExtrasGroupStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CreateExtrasGroupState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -161,7 +167,9 @@ class _$CreateExtrasGroupStateImpl extends _CreateExtrasGroupState {
   int get hashCode => Object.hash(runtimeType, isLoading,
       const DeepCollectionEquality().hash(_products), package);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CreateExtrasGroupState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CreateExtrasGroupStateImplCopyWith<_$CreateExtrasGroupStateImpl>
@@ -182,8 +190,11 @@ abstract class _CreateExtrasGroupState extends CreateExtrasGroupState {
   List<ProductData> get products;
   @override
   AdsPackage? get package;
+
+  /// Create a copy of CreateExtrasGroupState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CreateExtrasGroupStateImplCopyWith<_$CreateExtrasGroupStateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

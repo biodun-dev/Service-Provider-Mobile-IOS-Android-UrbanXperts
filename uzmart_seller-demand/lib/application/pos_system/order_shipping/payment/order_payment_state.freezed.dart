@@ -25,7 +25,9 @@ mixin _$OrderPaymentState {
   List<CurrencyData> get currencies => throw _privateConstructorUsedError;
   bool get isCurrenciesLoading => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of OrderPaymentState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $OrderPaymentStateCopyWith<OrderPaymentState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -57,6 +59,8 @@ class _$OrderPaymentStateCopyWithImpl<$Res, $Val extends OrderPaymentState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of OrderPaymentState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -133,6 +137,8 @@ class __$$OrderPaymentStateImplCopyWithImpl<$Res>
       $Res Function(_$OrderPaymentStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of OrderPaymentState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -272,7 +278,9 @@ class _$OrderPaymentStateImpl extends _OrderPaymentState {
       const DeepCollectionEquality().hash(_currencies),
       isCurrenciesLoading);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of OrderPaymentState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$OrderPaymentStateImplCopyWith<_$OrderPaymentStateImpl> get copyWith =>
@@ -308,8 +316,11 @@ abstract class _OrderPaymentState extends OrderPaymentState {
   List<CurrencyData> get currencies;
   @override
   bool get isCurrenciesLoading;
+
+  /// Create a copy of OrderPaymentState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$OrderPaymentStateImplCopyWith<_$OrderPaymentStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

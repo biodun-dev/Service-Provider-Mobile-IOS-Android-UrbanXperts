@@ -22,7 +22,9 @@ mixin _$ServiceCategoriesState {
   List<int> get selectParents => throw _privateConstructorUsedError;
   List<int> get selectSubs => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ServiceCategoriesState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ServiceCategoriesStateCopyWith<ServiceCategoriesState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -52,6 +54,8 @@ class _$ServiceCategoriesStateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ServiceCategoriesState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -113,6 +117,8 @@ class __$$ServiceCategoriesStateImplCopyWithImpl<$Res>
       $Res Function(_$ServiceCategoriesStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ServiceCategoriesState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -232,7 +238,9 @@ class _$ServiceCategoriesStateImpl extends _ServiceCategoriesState {
       const DeepCollectionEquality().hash(_selectParents),
       const DeepCollectionEquality().hash(_selectSubs));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ServiceCategoriesState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ServiceCategoriesStateImplCopyWith<_$ServiceCategoriesStateImpl>
@@ -259,8 +267,11 @@ abstract class _ServiceCategoriesState extends ServiceCategoriesState {
   List<int> get selectParents;
   @override
   List<int> get selectSubs;
+
+  /// Create a copy of ServiceCategoriesState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ServiceCategoriesStateImplCopyWith<_$ServiceCategoriesStateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

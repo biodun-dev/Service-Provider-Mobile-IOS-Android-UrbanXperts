@@ -19,7 +19,9 @@ mixin _$ServiceExtrasState {
   bool get isLoading => throw _privateConstructorUsedError;
   List<ServiceExtrasData> get extras => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ServiceExtrasState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ServiceExtrasStateCopyWith<ServiceExtrasState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -43,6 +45,8 @@ class _$ServiceExtrasStateCopyWithImpl<$Res, $Val extends ServiceExtrasState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ServiceExtrasState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -81,6 +85,8 @@ class __$$ServiceExtrasStateImplCopyWithImpl<$Res>
       $Res Function(_$ServiceExtrasStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ServiceExtrasState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -139,7 +145,9 @@ class _$ServiceExtrasStateImpl extends _ServiceExtrasState {
   int get hashCode => Object.hash(
       runtimeType, isLoading, const DeepCollectionEquality().hash(_extras));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ServiceExtrasState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ServiceExtrasStateImplCopyWith<_$ServiceExtrasStateImpl> get copyWith =>
@@ -157,8 +165,11 @@ abstract class _ServiceExtrasState extends ServiceExtrasState {
   bool get isLoading;
   @override
   List<ServiceExtrasData> get extras;
+
+  /// Create a copy of ServiceExtrasState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ServiceExtrasStateImplCopyWith<_$ServiceExtrasStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

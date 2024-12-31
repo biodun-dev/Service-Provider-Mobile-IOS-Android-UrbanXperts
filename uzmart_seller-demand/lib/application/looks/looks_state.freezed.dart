@@ -19,7 +19,9 @@ mixin _$LooksState {
   bool get isLoading => throw _privateConstructorUsedError;
   List<LooksData> get looks => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of LooksState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $LooksStateCopyWith<LooksState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -43,6 +45,8 @@ class _$LooksStateCopyWithImpl<$Res, $Val extends LooksState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of LooksState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -81,6 +85,8 @@ class __$$LooksStateImplCopyWithImpl<$Res>
       _$LooksStateImpl _value, $Res Function(_$LooksStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of LooksState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -139,7 +145,9 @@ class _$LooksStateImpl extends _LooksState {
   int get hashCode => Object.hash(
       runtimeType, isLoading, const DeepCollectionEquality().hash(_looks));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of LooksState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$LooksStateImplCopyWith<_$LooksStateImpl> get copyWith =>
@@ -155,8 +163,11 @@ abstract class _LooksState extends LooksState {
   bool get isLoading;
   @override
   List<LooksData> get looks;
+
+  /// Create a copy of LooksState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$LooksStateImplCopyWith<_$LooksStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

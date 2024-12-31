@@ -21,7 +21,9 @@ mixin _$CategoriesState {
   List<int> get selectParents => throw _privateConstructorUsedError;
   List<int> get selectSubs => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CategoriesState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CategoriesStateCopyWith<CategoriesState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -49,6 +51,8 @@ class _$CategoriesStateCopyWithImpl<$Res, $Val extends CategoriesState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CategoriesState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -101,6 +105,8 @@ class __$$CategoriesStateImplCopyWithImpl<$Res>
       _$CategoriesStateImpl _value, $Res Function(_$CategoriesStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CategoriesState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -201,7 +207,9 @@ class _$CategoriesStateImpl extends _CategoriesState {
       const DeepCollectionEquality().hash(_selectParents),
       const DeepCollectionEquality().hash(_selectSubs));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CategoriesState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CategoriesStateImplCopyWith<_$CategoriesStateImpl> get copyWith =>
@@ -225,8 +233,11 @@ abstract class _CategoriesState extends CategoriesState {
   List<int> get selectParents;
   @override
   List<int> get selectSubs;
+
+  /// Create a copy of CategoriesState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CategoriesStateImplCopyWith<_$CategoriesStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

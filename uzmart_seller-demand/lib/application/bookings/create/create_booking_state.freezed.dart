@@ -32,7 +32,9 @@ mixin _$CreateBookingState {
   List<ServiceData> get selectServices => throw _privateConstructorUsedError;
   Map<int, UserData> get selectMasters => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CreateBookingState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CreateBookingStateCopyWith<CreateBookingState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -70,6 +72,8 @@ class _$CreateBookingStateCopyWithImpl<$Res, $Val extends CreateBookingState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CreateBookingState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -182,6 +186,8 @@ class __$$CreateBookingStateImplCopyWithImpl<$Res>
       $Res Function(_$CreateBookingStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CreateBookingState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -424,7 +430,9 @@ class _$CreateBookingStateImpl extends _CreateBookingState {
       const DeepCollectionEquality().hash(_selectServices),
       const DeepCollectionEquality().hash(_selectMasters));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CreateBookingState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CreateBookingStateImplCopyWith<_$CreateBookingStateImpl> get copyWith =>
@@ -478,8 +486,11 @@ abstract class _CreateBookingState extends CreateBookingState {
   List<ServiceData> get selectServices;
   @override
   Map<int, UserData> get selectMasters;
+
+  /// Create a copy of CreateBookingState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CreateBookingStateImplCopyWith<_$CreateBookingStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

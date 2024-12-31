@@ -28,7 +28,9 @@ mixin _$EditFoodStocksState {
   Map<String, List<Extras?>> get selectGroups =>
       throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditFoodStocksState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $EditFoodStocksStateCopyWith<EditFoodStocksState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -62,6 +64,8 @@ class _$EditFoodStocksStateCopyWithImpl<$Res, $Val extends EditFoodStocksState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EditFoodStocksState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -150,6 +154,8 @@ class __$$EditFoodStocksStateImplCopyWithImpl<$Res>
       $Res Function(_$EditFoodStocksStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EditFoodStocksState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -342,7 +348,9 @@ class _$EditFoodStocksStateImpl extends _EditFoodStocksState {
       const DeepCollectionEquality().hash(_localExtras),
       const DeepCollectionEquality().hash(_selectGroups));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditFoodStocksState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EditFoodStocksStateImplCopyWith<_$EditFoodStocksStateImpl> get copyWith =>
@@ -385,8 +393,11 @@ abstract class _EditFoodStocksState extends EditFoodStocksState {
   List<Extras?> get localExtras;
   @override
   Map<String, List<Extras?>> get selectGroups;
+
+  /// Create a copy of EditFoodStocksState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EditFoodStocksStateImplCopyWith<_$EditFoodStocksStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

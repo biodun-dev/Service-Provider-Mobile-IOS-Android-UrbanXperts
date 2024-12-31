@@ -23,7 +23,9 @@ mixin _$AddFoodCategoriesState {
   List<TextEditingController> get categoryControllers =>
       throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AddFoodCategoriesState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AddFoodCategoriesStateCopyWith<AddFoodCategoriesState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -53,6 +55,8 @@ class _$AddFoodCategoriesStateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AddFoodCategoriesState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -114,6 +118,8 @@ class __$$AddFoodCategoriesStateImplCopyWithImpl<$Res>
       $Res Function(_$AddFoodCategoriesStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AddFoodCategoriesState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -228,7 +234,9 @@ class _$AddFoodCategoriesStateImpl extends _AddFoodCategoriesState {
       isLoading,
       const DeepCollectionEquality().hash(_categoryControllers));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AddFoodCategoriesState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AddFoodCategoriesStateImplCopyWith<_$AddFoodCategoriesStateImpl>
@@ -256,8 +264,11 @@ abstract class _AddFoodCategoriesState extends AddFoodCategoriesState {
   bool get isLoading;
   @override
   List<TextEditingController> get categoryControllers;
+
+  /// Create a copy of AddFoodCategoriesState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AddFoodCategoriesStateImplCopyWith<_$AddFoodCategoriesStateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

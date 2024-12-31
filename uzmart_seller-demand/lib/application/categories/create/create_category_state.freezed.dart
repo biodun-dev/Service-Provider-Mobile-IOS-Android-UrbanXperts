@@ -25,7 +25,9 @@ mixin _$CreateCategoryState {
   String? get imageFile => throw _privateConstructorUsedError;
   CategoryData? get category => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CreateCategoryState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CreateCategoryStateCopyWith<CreateCategoryState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -57,6 +59,8 @@ class _$CreateCategoryStateCopyWithImpl<$Res, $Val extends CreateCategoryState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CreateCategoryState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -133,6 +137,8 @@ class __$$CreateCategoryStateImplCopyWithImpl<$Res>
       $Res Function(_$CreateCategoryStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CreateCategoryState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -248,7 +254,9 @@ class _$CreateCategoryStateImpl extends _CreateCategoryState {
   int get hashCode => Object.hash(runtimeType, title, description, input,
       active, isLoading, isInitial, imageFile, category);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CreateCategoryState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CreateCategoryStateImplCopyWith<_$CreateCategoryStateImpl> get copyWith =>
@@ -284,8 +292,11 @@ abstract class _CreateCategoryState extends CreateCategoryState {
   String? get imageFile;
   @override
   CategoryData? get category;
+
+  /// Create a copy of CreateCategoryState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CreateCategoryStateImplCopyWith<_$CreateCategoryStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

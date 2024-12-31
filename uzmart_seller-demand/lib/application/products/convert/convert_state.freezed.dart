@@ -21,7 +21,9 @@ mixin _$ConvertState {
   bool get isLoading => throw _privateConstructorUsedError;
   double get progress => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ConvertState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ConvertStateCopyWith<ConvertState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -45,6 +47,8 @@ class _$ConvertStateCopyWithImpl<$Res, $Val extends ConvertState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ConvertState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -93,6 +97,8 @@ class __$$ConvertStateImplCopyWithImpl<$Res>
       _$ConvertStateImpl _value, $Res Function(_$ConvertStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ConvertState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -165,7 +171,9 @@ class _$ConvertStateImpl implements _ConvertState {
   @override
   int get hashCode => Object.hash(runtimeType, file, name, isLoading, progress);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ConvertState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ConvertStateImplCopyWith<_$ConvertStateImpl> get copyWith =>
@@ -187,8 +195,11 @@ abstract class _ConvertState implements ConvertState {
   bool get isLoading;
   @override
   double get progress;
+
+  /// Create a copy of ConvertState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ConvertStateImplCopyWith<_$ConvertStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

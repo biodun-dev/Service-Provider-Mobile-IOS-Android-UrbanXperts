@@ -22,7 +22,9 @@ mixin _$AddLooksState {
   bool get isLoading => throw _privateConstructorUsedError;
   LooksData? get looksData => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AddLooksState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AddLooksStateCopyWith<AddLooksState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -51,6 +53,8 @@ class _$AddLooksStateCopyWithImpl<$Res, $Val extends AddLooksState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AddLooksState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -109,6 +113,8 @@ class __$$AddLooksStateImplCopyWithImpl<$Res>
       _$AddLooksStateImpl _value, $Res Function(_$AddLooksStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AddLooksState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -199,7 +205,9 @@ class _$AddLooksStateImpl extends _AddLooksState {
   int get hashCode => Object.hash(runtimeType, active, imageFile,
       const DeepCollectionEquality().hash(_products), isLoading, looksData);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AddLooksState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AddLooksStateImplCopyWith<_$AddLooksStateImpl> get copyWith =>
@@ -225,8 +233,11 @@ abstract class _AddLooksState extends AddLooksState {
   bool get isLoading;
   @override
   LooksData? get looksData;
+
+  /// Create a copy of AddLooksState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AddLooksStateImplCopyWith<_$AddLooksStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

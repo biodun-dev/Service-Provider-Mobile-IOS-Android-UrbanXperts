@@ -19,7 +19,9 @@ mixin _$StockState {
   bool get isLoading => throw _privateConstructorUsedError;
   List<Stocks> get stocks => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of StockState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $StockStateCopyWith<StockState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -43,6 +45,8 @@ class _$StockStateCopyWithImpl<$Res, $Val extends StockState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of StockState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -81,6 +85,8 @@ class __$$StockStateImplCopyWithImpl<$Res>
       _$StockStateImpl _value, $Res Function(_$StockStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of StockState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -139,7 +145,9 @@ class _$StockStateImpl extends _StockState {
   int get hashCode => Object.hash(
       runtimeType, isLoading, const DeepCollectionEquality().hash(_stocks));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of StockState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$StockStateImplCopyWith<_$StockStateImpl> get copyWith =>
@@ -155,8 +163,11 @@ abstract class _StockState extends StockState {
   bool get isLoading;
   @override
   List<Stocks> get stocks;
+
+  /// Create a copy of StockState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$StockStateImplCopyWith<_$StockStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

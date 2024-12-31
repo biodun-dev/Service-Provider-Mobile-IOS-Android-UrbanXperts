@@ -24,7 +24,9 @@ mixin _$EditShopCategoryState {
       throw _privateConstructorUsedError;
   ShopCategoryData? get shopCategoryData => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditShopCategoryState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $EditShopCategoryStateCopyWith<EditShopCategoryState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -54,6 +56,8 @@ class _$EditShopCategoryStateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EditShopCategoryState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -114,6 +118,8 @@ class __$$EditShopCategoryStateImplCopyWithImpl<$Res>
       $Res Function(_$EditShopCategoryStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EditShopCategoryState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -210,7 +216,9 @@ class _$EditShopCategoryStateImpl extends _EditShopCategoryState {
       shopCategoryController,
       shopCategoryData);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditShopCategoryState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EditShopCategoryStateImplCopyWith<_$EditShopCategoryStateImpl>
@@ -237,8 +245,11 @@ abstract class _EditShopCategoryState extends EditShopCategoryState {
   TextEditingController? get shopCategoryController;
   @override
   ShopCategoryData? get shopCategoryData;
+
+  /// Create a copy of EditShopCategoryState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EditShopCategoryStateImplCopyWith<_$EditShopCategoryStateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

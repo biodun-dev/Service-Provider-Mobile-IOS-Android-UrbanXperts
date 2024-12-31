@@ -28,7 +28,9 @@ mixin _$EditDiscountState {
       throw _privateConstructorUsedError;
   DiscountData? get discount => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditDiscountState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $EditDiscountStateCopyWith<EditDiscountState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -62,6 +64,8 @@ class _$EditDiscountStateCopyWithImpl<$Res, $Val extends EditDiscountState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EditDiscountState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -150,6 +154,8 @@ class __$$EditDiscountStateImplCopyWithImpl<$Res>
       $Res Function(_$EditDiscountStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EditDiscountState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -299,7 +305,9 @@ class _$EditDiscountStateImpl extends _EditDiscountState {
       dateController,
       discount);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditDiscountState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EditDiscountStateImplCopyWith<_$EditDiscountStateImpl> get copyWith =>
@@ -341,8 +349,11 @@ abstract class _EditDiscountState extends EditDiscountState {
   TextEditingController? get dateController;
   @override
   DiscountData? get discount;
+
+  /// Create a copy of EditDiscountState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EditDiscountStateImplCopyWith<_$EditDiscountStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

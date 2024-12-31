@@ -22,7 +22,9 @@ mixin _$AddFormOptionState {
   FormOptionsData? get form => throw _privateConstructorUsedError;
   List<QuestionData> get questions => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AddFormOptionState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AddFormOptionStateCopyWith<AddFormOptionState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -51,6 +53,8 @@ class _$AddFormOptionStateCopyWithImpl<$Res, $Val extends AddFormOptionState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AddFormOptionState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -109,6 +113,8 @@ class __$$AddFormOptionStateImplCopyWithImpl<$Res>
       $Res Function(_$AddFormOptionStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AddFormOptionState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -199,7 +205,9 @@ class _$AddFormOptionStateImpl extends _AddFormOptionState {
   int get hashCode => Object.hash(runtimeType, isLoading, active, required,
       form, const DeepCollectionEquality().hash(_questions));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AddFormOptionState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AddFormOptionStateImplCopyWith<_$AddFormOptionStateImpl> get copyWith =>
@@ -226,8 +234,11 @@ abstract class _AddFormOptionState extends AddFormOptionState {
   FormOptionsData? get form;
   @override
   List<QuestionData> get questions;
+
+  /// Create a copy of AddFormOptionState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AddFormOptionStateImplCopyWith<_$AddFormOptionStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

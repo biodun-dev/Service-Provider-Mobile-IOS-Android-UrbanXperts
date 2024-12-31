@@ -19,7 +19,9 @@ mixin _$MembershipState {
   bool get isLoading => throw _privateConstructorUsedError;
   List<MembershipData> get list => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MembershipState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MembershipStateCopyWith<MembershipState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -43,6 +45,8 @@ class _$MembershipStateCopyWithImpl<$Res, $Val extends MembershipState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MembershipState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -81,6 +85,8 @@ class __$$MembershipStateImplCopyWithImpl<$Res>
       _$MembershipStateImpl _value, $Res Function(_$MembershipStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MembershipState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -139,7 +145,9 @@ class _$MembershipStateImpl extends _MembershipState {
   int get hashCode => Object.hash(
       runtimeType, isLoading, const DeepCollectionEquality().hash(_list));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MembershipState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MembershipStateImplCopyWith<_$MembershipStateImpl> get copyWith =>
@@ -157,8 +165,11 @@ abstract class _MembershipState extends MembershipState {
   bool get isLoading;
   @override
   List<MembershipData> get list;
+
+  /// Create a copy of MembershipState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MembershipStateImplCopyWith<_$MembershipStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

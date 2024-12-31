@@ -21,7 +21,9 @@ mixin _$MasterGalleriesState {
   List<String> get images => throw _privateConstructorUsedError;
   List<Galleries> get listOfUrls => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MasterGalleriesState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MasterGalleriesStateCopyWith<MasterGalleriesState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -50,6 +52,8 @@ class _$MasterGalleriesStateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MasterGalleriesState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -102,6 +106,8 @@ class __$$MasterGalleriesStateImplCopyWithImpl<$Res>
       $Res Function(_$MasterGalleriesStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MasterGalleriesState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -194,7 +200,9 @@ class _$MasterGalleriesStateImpl extends _MasterGalleriesState {
       const DeepCollectionEquality().hash(_images),
       const DeepCollectionEquality().hash(_listOfUrls));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MasterGalleriesState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MasterGalleriesStateImplCopyWith<_$MasterGalleriesStateImpl>
@@ -219,8 +227,11 @@ abstract class _MasterGalleriesState extends MasterGalleriesState {
   List<String> get images;
   @override
   List<Galleries> get listOfUrls;
+
+  /// Create a copy of MasterGalleriesState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MasterGalleriesStateImplCopyWith<_$MasterGalleriesStateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

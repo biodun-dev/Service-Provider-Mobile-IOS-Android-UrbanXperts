@@ -22,7 +22,9 @@ mixin _$BookingDetailsState {
   int get selectedIndex => throw _privateConstructorUsedError;
   BookingData? get bookingData => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BookingDetailsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $BookingDetailsStateCopyWith<BookingDetailsState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -51,6 +53,8 @@ class _$BookingDetailsStateCopyWithImpl<$Res, $Val extends BookingDetailsState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of BookingDetailsState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -109,6 +113,8 @@ class __$$BookingDetailsStateImplCopyWithImpl<$Res>
       $Res Function(_$BookingDetailsStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of BookingDetailsState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -196,7 +202,9 @@ class _$BookingDetailsStateImpl extends _BookingDetailsState {
   int get hashCode => Object.hash(runtimeType, isLoading, isUpdating,
       isUpdateNote, selectedIndex, bookingData);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BookingDetailsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BookingDetailsStateImplCopyWith<_$BookingDetailsStateImpl> get copyWith =>
@@ -223,8 +231,11 @@ abstract class _BookingDetailsState extends BookingDetailsState {
   int get selectedIndex;
   @override
   BookingData? get bookingData;
+
+  /// Create a copy of BookingDetailsState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BookingDetailsStateImplCopyWith<_$BookingDetailsStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

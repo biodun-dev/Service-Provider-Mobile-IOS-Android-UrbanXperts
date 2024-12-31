@@ -19,7 +19,9 @@ mixin _$ServiceMasterState {
   bool get isLoading => throw _privateConstructorUsedError;
   List<ServiceData> get services => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ServiceMasterState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ServiceMasterStateCopyWith<ServiceMasterState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -43,6 +45,8 @@ class _$ServiceMasterStateCopyWithImpl<$Res, $Val extends ServiceMasterState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ServiceMasterState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -81,6 +85,8 @@ class __$$ServiceMasterStateImplCopyWithImpl<$Res>
       $Res Function(_$ServiceMasterStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ServiceMasterState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -139,7 +145,9 @@ class _$ServiceMasterStateImpl extends _ServiceMasterState {
   int get hashCode => Object.hash(
       runtimeType, isLoading, const DeepCollectionEquality().hash(_services));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ServiceMasterState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ServiceMasterStateImplCopyWith<_$ServiceMasterStateImpl> get copyWith =>
@@ -157,8 +165,11 @@ abstract class _ServiceMasterState extends ServiceMasterState {
   bool get isLoading;
   @override
   List<ServiceData> get services;
+
+  /// Create a copy of ServiceMasterState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ServiceMasterStateImplCopyWith<_$ServiceMasterStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

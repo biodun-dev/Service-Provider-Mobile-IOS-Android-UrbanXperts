@@ -19,7 +19,9 @@ mixin _$BookingMastersState {
   bool get isLoading => throw _privateConstructorUsedError;
   List<UserData> get users => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BookingMastersState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $BookingMastersStateCopyWith<BookingMastersState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -43,6 +45,8 @@ class _$BookingMastersStateCopyWithImpl<$Res, $Val extends BookingMastersState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of BookingMastersState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -81,6 +85,8 @@ class __$$BookingMastersStateImplCopyWithImpl<$Res>
       $Res Function(_$BookingMastersStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of BookingMastersState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -139,7 +145,9 @@ class _$BookingMastersStateImpl extends _BookingMastersState {
   int get hashCode => Object.hash(
       runtimeType, isLoading, const DeepCollectionEquality().hash(_users));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BookingMastersState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BookingMastersStateImplCopyWith<_$BookingMastersStateImpl> get copyWith =>
@@ -157,8 +165,11 @@ abstract class _BookingMastersState extends BookingMastersState {
   bool get isLoading;
   @override
   List<UserData> get users;
+
+  /// Create a copy of BookingMastersState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BookingMastersStateImplCopyWith<_$BookingMastersStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

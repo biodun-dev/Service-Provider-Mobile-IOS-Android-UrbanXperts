@@ -23,7 +23,9 @@ mixin _$EditFoodBrandState {
   bool get isLoading => throw _privateConstructorUsedError;
   Brand? get brand => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditFoodBrandState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $EditFoodBrandStateCopyWith<EditFoodBrandState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -52,6 +54,8 @@ class _$EditFoodBrandStateCopyWithImpl<$Res, $Val extends EditFoodBrandState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EditFoodBrandState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -110,6 +114,8 @@ class __$$EditFoodBrandStateImplCopyWithImpl<$Res>
       $Res Function(_$EditFoodBrandStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EditFoodBrandState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -205,7 +211,9 @@ class _$EditFoodBrandStateImpl extends _EditFoodBrandState {
       isLoading,
       brand);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditFoodBrandState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EditFoodBrandStateImplCopyWith<_$EditFoodBrandStateImpl> get copyWith =>
@@ -232,8 +240,11 @@ abstract class _EditFoodBrandState extends EditFoodBrandState {
   bool get isLoading;
   @override
   Brand? get brand;
+
+  /// Create a copy of EditFoodBrandState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EditFoodBrandStateImplCopyWith<_$EditFoodBrandStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

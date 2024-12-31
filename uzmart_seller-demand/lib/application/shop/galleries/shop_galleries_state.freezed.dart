@@ -21,7 +21,9 @@ mixin _$ShopGalleriesState {
   List<String> get images => throw _privateConstructorUsedError;
   List<Galleries> get listOfUrls => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ShopGalleriesState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ShopGalleriesStateCopyWith<ShopGalleriesState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -49,6 +51,8 @@ class _$ShopGalleriesStateCopyWithImpl<$Res, $Val extends ShopGalleriesState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ShopGalleriesState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -101,6 +105,8 @@ class __$$ShopGalleriesStateImplCopyWithImpl<$Res>
       $Res Function(_$ShopGalleriesStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ShopGalleriesState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -193,7 +199,9 @@ class _$ShopGalleriesStateImpl extends _ShopGalleriesState {
       const DeepCollectionEquality().hash(_images),
       const DeepCollectionEquality().hash(_listOfUrls));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ShopGalleriesState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ShopGalleriesStateImplCopyWith<_$ShopGalleriesStateImpl> get copyWith =>
@@ -217,8 +225,11 @@ abstract class _ShopGalleriesState extends ShopGalleriesState {
   List<String> get images;
   @override
   List<Galleries> get listOfUrls;
+
+  /// Create a copy of ShopGalleriesState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ShopGalleriesStateImplCopyWith<_$ShopGalleriesStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

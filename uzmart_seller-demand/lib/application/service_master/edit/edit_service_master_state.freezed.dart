@@ -21,7 +21,9 @@ mixin _$EditServiceMasterState {
   bool get isUpdating => throw _privateConstructorUsedError;
   ServiceData? get serviceData => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditServiceMasterState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $EditServiceMasterStateCopyWith<EditServiceMasterState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -47,6 +49,8 @@ class _$EditServiceMasterStateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EditServiceMasterState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -99,6 +103,8 @@ class __$$EditServiceMasterStateImplCopyWithImpl<$Res>
       $Res Function(_$EditServiceMasterStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EditServiceMasterState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -173,7 +179,9 @@ class _$EditServiceMasterStateImpl extends _EditServiceMasterState {
   int get hashCode =>
       Object.hash(runtimeType, active, isLoading, isUpdating, serviceData);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditServiceMasterState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EditServiceMasterStateImplCopyWith<_$EditServiceMasterStateImpl>
@@ -197,8 +205,11 @@ abstract class _EditServiceMasterState extends EditServiceMasterState {
   bool get isUpdating;
   @override
   ServiceData? get serviceData;
+
+  /// Create a copy of EditServiceMasterState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EditServiceMasterStateImplCopyWith<_$EditServiceMasterStateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

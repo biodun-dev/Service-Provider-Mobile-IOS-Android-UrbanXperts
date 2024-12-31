@@ -22,7 +22,9 @@ mixin _$AddServiceState {
   List<String> get images => throw _privateConstructorUsedError;
   List<Galleries> get listOfUrls => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AddServiceState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AddServiceStateCopyWith<AddServiceState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -51,6 +53,8 @@ class _$AddServiceStateCopyWithImpl<$Res, $Val extends AddServiceState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AddServiceState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -109,6 +113,8 @@ class __$$AddServiceStateImplCopyWithImpl<$Res>
       _$AddServiceStateImpl _value, $Res Function(_$AddServiceStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AddServiceState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -211,7 +217,9 @@ class _$AddServiceStateImpl extends _AddServiceState {
       const DeepCollectionEquality().hash(_images),
       const DeepCollectionEquality().hash(_listOfUrls));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AddServiceState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AddServiceStateImplCopyWith<_$AddServiceStateImpl> get copyWith =>
@@ -238,8 +246,11 @@ abstract class _AddServiceState extends AddServiceState {
   List<String> get images;
   @override
   List<Galleries> get listOfUrls;
+
+  /// Create a copy of AddServiceState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AddServiceStateImplCopyWith<_$AddServiceStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

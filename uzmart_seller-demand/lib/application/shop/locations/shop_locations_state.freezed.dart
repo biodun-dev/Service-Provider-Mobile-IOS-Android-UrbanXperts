@@ -23,7 +23,9 @@ mixin _$ShopLocationsState {
   int? get countryId => throw _privateConstructorUsedError;
   int? get cityId => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ShopLocationsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ShopLocationsStateCopyWith<ShopLocationsState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -53,6 +55,8 @@ class _$ShopLocationsStateCopyWithImpl<$Res, $Val extends ShopLocationsState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ShopLocationsState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -117,6 +121,8 @@ class __$$ShopLocationsStateImplCopyWithImpl<$Res>
       $Res Function(_$ShopLocationsStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ShopLocationsState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -224,7 +230,9 @@ class _$ShopLocationsStateImpl extends _ShopLocationsState {
       countryId,
       cityId);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ShopLocationsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ShopLocationsStateImplCopyWith<_$ShopLocationsStateImpl> get copyWith =>
@@ -254,8 +262,11 @@ abstract class _ShopLocationsState extends ShopLocationsState {
   int? get countryId;
   @override
   int? get cityId;
+
+  /// Create a copy of ShopLocationsState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ShopLocationsStateImplCopyWith<_$ShopLocationsStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

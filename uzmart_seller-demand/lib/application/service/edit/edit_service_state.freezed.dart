@@ -23,7 +23,9 @@ mixin _$EditServiceState {
   List<String> get images => throw _privateConstructorUsedError;
   List<Galleries> get listOfUrls => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditServiceState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $EditServiceStateCopyWith<EditServiceState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -53,6 +55,8 @@ class _$EditServiceStateCopyWithImpl<$Res, $Val extends EditServiceState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EditServiceState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -117,6 +121,8 @@ class __$$EditServiceStateImplCopyWithImpl<$Res>
       $Res Function(_$EditServiceStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EditServiceState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -231,7 +237,9 @@ class _$EditServiceStateImpl extends _EditServiceState {
       const DeepCollectionEquality().hash(_images),
       const DeepCollectionEquality().hash(_listOfUrls));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditServiceState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EditServiceStateImplCopyWith<_$EditServiceStateImpl> get copyWith =>
@@ -261,8 +269,11 @@ abstract class _EditServiceState extends EditServiceState {
   List<String> get images;
   @override
   List<Galleries> get listOfUrls;
+
+  /// Create a copy of EditServiceState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EditServiceStateImplCopyWith<_$EditServiceStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

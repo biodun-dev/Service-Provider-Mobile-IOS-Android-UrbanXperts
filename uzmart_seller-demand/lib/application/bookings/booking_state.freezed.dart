@@ -25,7 +25,9 @@ mixin _$BookingState {
   DateTime? get startDate => throw _privateConstructorUsedError;
   DateTime? get endDate => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BookingState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $BookingStateCopyWith<BookingState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -57,6 +59,8 @@ class _$BookingStateCopyWithImpl<$Res, $Val extends BookingState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of BookingState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -133,6 +137,8 @@ class __$$BookingStateImplCopyWithImpl<$Res>
       _$BookingStateImpl _value, $Res Function(_$BookingStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of BookingState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -265,7 +271,9 @@ class _$BookingStateImpl extends _BookingState {
       startDate,
       endDate);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BookingState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BookingStateImplCopyWith<_$BookingStateImpl> get copyWith =>
@@ -300,8 +308,11 @@ abstract class _BookingState extends BookingState {
   DateTime? get startDate;
   @override
   DateTime? get endDate;
+
+  /// Create a copy of BookingState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BookingStateImplCopyWith<_$BookingStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

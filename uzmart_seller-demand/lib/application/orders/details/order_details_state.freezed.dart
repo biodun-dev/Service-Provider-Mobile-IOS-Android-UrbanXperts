@@ -25,7 +25,9 @@ mixin _$OrderDetailsState {
   StockReplaceData? get replaceData => throw _privateConstructorUsedError;
   int get quantity => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of OrderDetailsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $OrderDetailsStateCopyWith<OrderDetailsState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -57,6 +59,8 @@ class _$OrderDetailsStateCopyWithImpl<$Res, $Val extends OrderDetailsState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of OrderDetailsState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -133,6 +137,8 @@ class __$$OrderDetailsStateImplCopyWithImpl<$Res>
       $Res Function(_$OrderDetailsStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of OrderDetailsState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -250,7 +256,9 @@ class _$OrderDetailsStateImpl extends _OrderDetailsState {
   int get hashCode => Object.hash(runtimeType, isLoading, isUpdating, phone,
       oldStocks, stocks, order, replaceData, quantity);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of OrderDetailsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$OrderDetailsStateImplCopyWith<_$OrderDetailsStateImpl> get copyWith =>
@@ -286,8 +294,11 @@ abstract class _OrderDetailsState extends OrderDetailsState {
   StockReplaceData? get replaceData;
   @override
   int get quantity;
+
+  /// Create a copy of OrderDetailsState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$OrderDetailsStateImplCopyWith<_$OrderDetailsStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

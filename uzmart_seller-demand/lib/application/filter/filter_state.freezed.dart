@@ -26,7 +26,9 @@ mixin _$FilterState {
   List<int> get prices => throw _privateConstructorUsedError;
   RangeValues? get rangeValues => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FilterState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $FilterStateCopyWith<FilterState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -59,6 +61,8 @@ class _$FilterStateCopyWithImpl<$Res, $Val extends FilterState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of FilterState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -141,6 +145,8 @@ class __$$FilterStateImplCopyWithImpl<$Res>
       _$FilterStateImpl _value, $Res Function(_$FilterStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of FilterState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -309,7 +315,9 @@ class _$FilterStateImpl implements _FilterState {
       const DeepCollectionEquality().hash(_prices),
       rangeValues);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of FilterState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$FilterStateImplCopyWith<_$FilterStateImpl> get copyWith =>
@@ -346,8 +354,11 @@ abstract class _FilterState implements FilterState {
   List<int> get prices;
   @override
   RangeValues? get rangeValues;
+
+  /// Create a copy of FilterState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FilterStateImplCopyWith<_$FilterStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

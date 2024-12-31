@@ -20,7 +20,9 @@ mixin _$CancelledMastersState {
   List<UserData> get users => throw _privateConstructorUsedError;
   int get totalCount => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CancelledMastersState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CancelledMastersStateCopyWith<CancelledMastersState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -45,6 +47,8 @@ class _$CancelledMastersStateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CancelledMastersState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -90,6 +94,8 @@ class __$$CancelledMastersStateImplCopyWithImpl<$Res>
       $Res Function(_$CancelledMastersStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CancelledMastersState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -161,7 +167,9 @@ class _$CancelledMastersStateImpl extends _CancelledMastersState {
   int get hashCode => Object.hash(runtimeType, isLoading,
       const DeepCollectionEquality().hash(_users), totalCount);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CancelledMastersState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CancelledMastersStateImplCopyWith<_$CancelledMastersStateImpl>
@@ -182,8 +190,11 @@ abstract class _CancelledMastersState extends CancelledMastersState {
   List<UserData> get users;
   @override
   int get totalCount;
+
+  /// Create a copy of CancelledMastersState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CancelledMastersStateImplCopyWith<_$CancelledMastersStateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

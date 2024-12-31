@@ -24,7 +24,9 @@ mixin _$EditBrandsState {
   List<Galleries> get listOfUrls => throw _privateConstructorUsedError;
   Brand? get brand => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditBrandsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $EditBrandsStateCopyWith<EditBrandsState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -55,6 +57,8 @@ class _$EditBrandsStateCopyWithImpl<$Res, $Val extends EditBrandsState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EditBrandsState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -125,6 +129,8 @@ class __$$EditBrandsStateImplCopyWithImpl<$Res>
       _$EditBrandsStateImpl _value, $Res Function(_$EditBrandsStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EditBrandsState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -249,7 +255,9 @@ class _$EditBrandsStateImpl extends _EditBrandsState {
       const DeepCollectionEquality().hash(_listOfUrls),
       brand);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditBrandsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EditBrandsStateImplCopyWith<_$EditBrandsStateImpl> get copyWith =>
@@ -282,8 +290,11 @@ abstract class _EditBrandsState extends EditBrandsState {
   List<Galleries> get listOfUrls;
   @override
   Brand? get brand;
+
+  /// Create a copy of EditBrandsState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EditBrandsStateImplCopyWith<_$EditBrandsStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

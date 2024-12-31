@@ -27,7 +27,9 @@ mixin _$EditCategoryState {
   List<Galleries> get listOfUrls => throw _privateConstructorUsedError;
   CategoryData? get category => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditCategoryState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $EditCategoryStateCopyWith<EditCategoryState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -61,6 +63,8 @@ class _$EditCategoryStateCopyWithImpl<$Res, $Val extends EditCategoryState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EditCategoryState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -149,6 +153,8 @@ class __$$EditCategoryStateImplCopyWithImpl<$Res>
       $Res Function(_$EditCategoryStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EditCategoryState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -309,7 +315,9 @@ class _$EditCategoryStateImpl extends _EditCategoryState {
       const DeepCollectionEquality().hash(_listOfUrls),
       category);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditCategoryState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EditCategoryStateImplCopyWith<_$EditCategoryStateImpl> get copyWith =>
@@ -351,8 +359,11 @@ abstract class _EditCategoryState extends EditCategoryState {
   List<Galleries> get listOfUrls;
   @override
   CategoryData? get category;
+
+  /// Create a copy of EditCategoryState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EditCategoryStateImplCopyWith<_$EditCategoryStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

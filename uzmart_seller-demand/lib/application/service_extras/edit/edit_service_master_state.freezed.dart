@@ -22,7 +22,9 @@ mixin _$EditServiceExtrasState {
   ServiceExtrasData? get extrasData => throw _privateConstructorUsedError;
   String? get imageFile => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditServiceExtrasState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $EditServiceExtrasStateCopyWith<EditServiceExtrasState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -52,6 +54,8 @@ class _$EditServiceExtrasStateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EditServiceExtrasState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -113,6 +117,8 @@ class __$$EditServiceExtrasStateImplCopyWithImpl<$Res>
       $Res Function(_$EditServiceExtrasStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EditServiceExtrasState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -197,7 +203,9 @@ class _$EditServiceExtrasStateImpl extends _EditServiceExtrasState {
   int get hashCode => Object.hash(
       runtimeType, active, isLoading, isUpdating, extrasData, imageFile);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditServiceExtrasState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EditServiceExtrasStateImplCopyWith<_$EditServiceExtrasStateImpl>
@@ -224,8 +232,11 @@ abstract class _EditServiceExtrasState extends EditServiceExtrasState {
   ServiceExtrasData? get extrasData;
   @override
   String? get imageFile;
+
+  /// Create a copy of EditServiceExtrasState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EditServiceExtrasStateImplCopyWith<_$EditServiceExtrasStateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

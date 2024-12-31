@@ -26,7 +26,9 @@ mixin _$EditCategoryParentState {
   List<TextEditingController> get categoryControllers =>
       throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditCategoryParentState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $EditCategoryParentStateCopyWith<EditCategoryParentState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -58,6 +60,8 @@ class _$EditCategoryParentStateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EditCategoryParentState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -131,6 +135,8 @@ class __$$EditCategoryParentStateImplCopyWithImpl<$Res>
       $Res Function(_$EditCategoryParentStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EditCategoryParentState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -266,7 +272,9 @@ class _$EditCategoryParentStateImpl extends _EditCategoryParentState {
       const DeepCollectionEquality().hash(_selectCategories),
       const DeepCollectionEquality().hash(_categoryControllers));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditCategoryParentState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EditCategoryParentStateImplCopyWith<_$EditCategoryParentStateImpl>
@@ -300,8 +308,11 @@ abstract class _EditCategoryParentState extends EditCategoryParentState {
   List<CategoryData> get selectCategories;
   @override
   List<TextEditingController> get categoryControllers;
+
+  /// Create a copy of EditCategoryParentState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EditCategoryParentStateImplCopyWith<_$EditCategoryParentStateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

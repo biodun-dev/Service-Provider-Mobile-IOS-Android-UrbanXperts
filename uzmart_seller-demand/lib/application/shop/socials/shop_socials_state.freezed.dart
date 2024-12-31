@@ -23,7 +23,9 @@ mixin _$ShopSocialsState {
   List<TextEditingController> get socialTypesController =>
       throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ShopSocialsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ShopSocialsStateCopyWith<ShopSocialsState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -51,6 +53,8 @@ class _$ShopSocialsStateCopyWithImpl<$Res, $Val extends ShopSocialsState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ShopSocialsState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -103,6 +107,8 @@ class __$$ShopSocialsStateImplCopyWithImpl<$Res>
       $Res Function(_$ShopSocialsStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ShopSocialsState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -206,7 +212,9 @@ class _$ShopSocialsStateImpl extends _ShopSocialsState {
       const DeepCollectionEquality().hash(_socialControllers),
       const DeepCollectionEquality().hash(_socialTypesController));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ShopSocialsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ShopSocialsStateImplCopyWith<_$ShopSocialsStateImpl> get copyWith =>
@@ -231,8 +239,11 @@ abstract class _ShopSocialsState extends ShopSocialsState {
   List<TextEditingController> get socialControllers;
   @override
   List<TextEditingController> get socialTypesController;
+
+  /// Create a copy of ShopSocialsState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ShopSocialsStateImplCopyWith<_$ShopSocialsStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

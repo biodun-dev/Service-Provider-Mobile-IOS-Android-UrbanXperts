@@ -20,7 +20,9 @@ mixin _$MasterDisableTimesState {
   bool get isUpdate => throw _privateConstructorUsedError;
   DisableTimes? get disableTime => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MasterDisableTimesState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MasterDisableTimesStateCopyWith<MasterDisableTimesState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -45,6 +47,8 @@ class _$MasterDisableTimesStateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MasterDisableTimesState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -91,6 +95,8 @@ class __$$MasterDisableTimesStateImplCopyWithImpl<$Res>
       $Res Function(_$MasterDisableTimesStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MasterDisableTimesState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -153,7 +159,9 @@ class _$MasterDisableTimesStateImpl extends _MasterDisableTimesState {
   int get hashCode =>
       Object.hash(runtimeType, isLoading, isUpdate, disableTime);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MasterDisableTimesState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MasterDisableTimesStateImplCopyWith<_$MasterDisableTimesStateImpl>
@@ -174,8 +182,11 @@ abstract class _MasterDisableTimesState extends MasterDisableTimesState {
   bool get isUpdate;
   @override
   DisableTimes? get disableTime;
+
+  /// Create a copy of MasterDisableTimesState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MasterDisableTimesStateImplCopyWith<_$MasterDisableTimesStateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

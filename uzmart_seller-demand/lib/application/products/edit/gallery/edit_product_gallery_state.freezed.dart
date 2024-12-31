@@ -23,7 +23,9 @@ mixin _$EditProductGalleryState {
   Map<String, List<Galleries?>> get listOfUrls =>
       throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditProductGalleryState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $EditProductGalleryStateCopyWith<EditProductGalleryState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -53,6 +55,8 @@ class _$EditProductGalleryStateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EditProductGalleryState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -112,6 +116,8 @@ class __$$EditProductGalleryImplCopyWithImpl<$Res>
       $Res Function(_$EditProductGalleryImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EditProductGalleryState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -222,7 +228,9 @@ class _$EditProductGalleryImpl extends _EditProductGallery {
       const DeepCollectionEquality().hash(_images),
       const DeepCollectionEquality().hash(_listOfUrls));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditProductGalleryState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EditProductGalleryImplCopyWith<_$EditProductGalleryImpl> get copyWith =>
@@ -250,8 +258,11 @@ abstract class _EditProductGallery extends EditProductGalleryState {
   Map<String, List<String?>> get images;
   @override
   Map<String, List<Galleries?>> get listOfUrls;
+
+  /// Create a copy of EditProductGalleryState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EditProductGalleryImplCopyWith<_$EditProductGalleryImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

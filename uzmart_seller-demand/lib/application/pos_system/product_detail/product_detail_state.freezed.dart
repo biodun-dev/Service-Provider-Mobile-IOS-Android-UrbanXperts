@@ -25,7 +25,9 @@ mixin _$ProductDetailState {
   ProductData? get productData => throw _privateConstructorUsedError;
   PriceData? get paginateResponse => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ProductDetailState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ProductDetailStateCopyWith<ProductDetailState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -57,6 +59,8 @@ class _$ProductDetailStateCopyWithImpl<$Res, $Val extends ProductDetailState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ProductDetailState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -133,6 +137,8 @@ class __$$ProductDetailStateImplCopyWithImpl<$Res>
       $Res Function(_$ProductDetailStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ProductDetailState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -280,7 +286,9 @@ class _$ProductDetailStateImpl extends _ProductDetailState {
       productData,
       paginateResponse);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ProductDetailState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ProductDetailStateImplCopyWith<_$ProductDetailStateImpl> get copyWith =>
@@ -316,8 +324,11 @@ abstract class _ProductDetailState extends ProductDetailState {
   ProductData? get productData;
   @override
   PriceData? get paginateResponse;
+
+  /// Create a copy of ProductDetailState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ProductDetailStateImplCopyWith<_$ProductDetailStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

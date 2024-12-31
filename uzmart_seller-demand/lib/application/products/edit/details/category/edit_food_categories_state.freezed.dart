@@ -26,7 +26,9 @@ mixin _$EditFoodCategoriesState {
   List<TextEditingController> get categoryControllers =>
       throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditFoodCategoriesState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $EditFoodCategoriesStateCopyWith<EditFoodCategoriesState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -58,6 +60,8 @@ class _$EditFoodCategoriesStateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EditFoodCategoriesState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -131,6 +135,8 @@ class __$$EditFoodCategoriesStateImplCopyWithImpl<$Res>
       $Res Function(_$EditFoodCategoriesStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EditFoodCategoriesState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -266,7 +272,9 @@ class _$EditFoodCategoriesStateImpl extends _EditFoodCategoriesState {
       const DeepCollectionEquality().hash(_selectCategories),
       const DeepCollectionEquality().hash(_categoryControllers));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditFoodCategoriesState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EditFoodCategoriesStateImplCopyWith<_$EditFoodCategoriesStateImpl>
@@ -300,8 +308,11 @@ abstract class _EditFoodCategoriesState extends EditFoodCategoriesState {
   List<CategoryData> get selectCategories;
   @override
   List<TextEditingController> get categoryControllers;
+
+  /// Create a copy of EditFoodCategoriesState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EditFoodCategoriesStateImplCopyWith<_$EditFoodCategoriesStateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

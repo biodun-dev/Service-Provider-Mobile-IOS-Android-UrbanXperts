@@ -19,7 +19,9 @@ mixin _$BrandState {
   bool get isLoading => throw _privateConstructorUsedError;
   List<Brand> get brands => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BrandState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $BrandStateCopyWith<BrandState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -43,6 +45,8 @@ class _$BrandStateCopyWithImpl<$Res, $Val extends BrandState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of BrandState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -81,6 +85,8 @@ class __$$BrandStateImplCopyWithImpl<$Res>
       _$BrandStateImpl _value, $Res Function(_$BrandStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of BrandState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -139,7 +145,9 @@ class _$BrandStateImpl extends _BrandState {
   int get hashCode => Object.hash(
       runtimeType, isLoading, const DeepCollectionEquality().hash(_brands));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BrandState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BrandStateImplCopyWith<_$BrandStateImpl> get copyWith =>
@@ -155,8 +163,11 @@ abstract class _BrandState extends BrandState {
   bool get isLoading;
   @override
   List<Brand> get brands;
+
+  /// Create a copy of BrandState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BrandStateImplCopyWith<_$BrandStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

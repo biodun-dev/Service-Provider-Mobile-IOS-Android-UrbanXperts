@@ -18,7 +18,9 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$HomeAppbarState {
   int get index => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of HomeAppbarState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $HomeAppbarStateCopyWith<HomeAppbarState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -42,6 +44,8 @@ class _$HomeAppbarStateCopyWithImpl<$Res, $Val extends HomeAppbarState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of HomeAppbarState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -75,6 +79,8 @@ class __$$HomeAppbarStateImplCopyWithImpl<$Res>
       _$HomeAppbarStateImpl _value, $Res Function(_$HomeAppbarStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of HomeAppbarState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -114,7 +120,9 @@ class _$HomeAppbarStateImpl extends _HomeAppbarState {
   @override
   int get hashCode => Object.hash(runtimeType, index);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of HomeAppbarState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$HomeAppbarStateImplCopyWith<_$HomeAppbarStateImpl> get copyWith =>
@@ -128,8 +136,11 @@ abstract class _HomeAppbarState extends HomeAppbarState {
 
   @override
   int get index;
+
+  /// Create a copy of HomeAppbarState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$HomeAppbarStateImplCopyWith<_$HomeAppbarStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -20,7 +20,9 @@ mixin _$AcceptedOrdersState {
   List<OrderData> get orders => throw _privateConstructorUsedError;
   int get totalCount => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AcceptedOrdersState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AcceptedOrdersStateCopyWith<AcceptedOrdersState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -44,6 +46,8 @@ class _$AcceptedOrdersStateCopyWithImpl<$Res, $Val extends AcceptedOrdersState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AcceptedOrdersState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -87,6 +91,8 @@ class __$$AcceptedOrdersStateImplCopyWithImpl<$Res>
       $Res Function(_$AcceptedOrdersStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AcceptedOrdersState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -158,7 +164,9 @@ class _$AcceptedOrdersStateImpl extends _AcceptedOrdersState {
   int get hashCode => Object.hash(runtimeType, isLoading,
       const DeepCollectionEquality().hash(_orders), totalCount);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AcceptedOrdersState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AcceptedOrdersStateImplCopyWith<_$AcceptedOrdersStateImpl> get copyWith =>
@@ -179,8 +187,11 @@ abstract class _AcceptedOrdersState extends AcceptedOrdersState {
   List<OrderData> get orders;
   @override
   int get totalCount;
+
+  /// Create a copy of AcceptedOrdersState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AcceptedOrdersStateImplCopyWith<_$AcceptedOrdersStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

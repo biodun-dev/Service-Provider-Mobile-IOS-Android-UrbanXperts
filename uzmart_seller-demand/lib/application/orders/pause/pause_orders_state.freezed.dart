@@ -20,7 +20,9 @@ mixin _$PauseOrdersState {
   List<OrderData> get orders => throw _privateConstructorUsedError;
   int get totalCount => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of PauseOrdersState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $PauseOrdersStateCopyWith<PauseOrdersState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -44,6 +46,8 @@ class _$PauseOrdersStateCopyWithImpl<$Res, $Val extends PauseOrdersState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of PauseOrdersState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -87,6 +91,8 @@ class __$$PauseOrdersStateImplCopyWithImpl<$Res>
       $Res Function(_$PauseOrdersStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of PauseOrdersState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -158,7 +164,9 @@ class _$PauseOrdersStateImpl extends _PauseOrdersState {
   int get hashCode => Object.hash(runtimeType, isLoading,
       const DeepCollectionEquality().hash(_orders), totalCount);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of PauseOrdersState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$PauseOrdersStateImplCopyWith<_$PauseOrdersStateImpl> get copyWith =>
@@ -179,8 +187,11 @@ abstract class _PauseOrdersState extends PauseOrdersState {
   List<OrderData> get orders;
   @override
   int get totalCount;
+
+  /// Create a copy of PauseOrdersState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$PauseOrdersStateImplCopyWith<_$PauseOrdersStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

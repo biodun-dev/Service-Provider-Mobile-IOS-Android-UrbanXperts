@@ -19,7 +19,9 @@ mixin _$AdsState {
   bool get isLoading => throw _privateConstructorUsedError;
   List<AdsData> get list => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AdsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AdsStateCopyWith<AdsState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -42,6 +44,8 @@ class _$AdsStateCopyWithImpl<$Res, $Val extends AdsState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AdsState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -80,6 +84,8 @@ class __$$AdsStateImplCopyWithImpl<$Res>
       _$AdsStateImpl _value, $Res Function(_$AdsStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AdsState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -138,7 +144,9 @@ class _$AdsStateImpl extends _AdsState {
   int get hashCode => Object.hash(
       runtimeType, isLoading, const DeepCollectionEquality().hash(_list));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AdsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AdsStateImplCopyWith<_$AdsStateImpl> get copyWith =>
@@ -154,8 +162,11 @@ abstract class _AdsState extends AdsState {
   bool get isLoading;
   @override
   List<AdsData> get list;
+
+  /// Create a copy of AdsState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AdsStateImplCopyWith<_$AdsStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

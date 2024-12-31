@@ -23,7 +23,9 @@ mixin _$CreateProductGalleryState {
   Map<String, List<Galleries?>> get listOfUrls =>
       throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CreateProductGalleryState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CreateProductGalleryStateCopyWith<CreateProductGalleryState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -53,6 +55,8 @@ class _$CreateProductGalleryStateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CreateProductGalleryState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -112,6 +116,8 @@ class __$$CreateProductGalleryImplCopyWithImpl<$Res>
       $Res Function(_$CreateProductGalleryImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CreateProductGalleryState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -222,7 +228,9 @@ class _$CreateProductGalleryImpl extends _CreateProductGallery {
       const DeepCollectionEquality().hash(_images),
       const DeepCollectionEquality().hash(_listOfUrls));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CreateProductGalleryState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CreateProductGalleryImplCopyWith<_$CreateProductGalleryImpl>
@@ -251,8 +259,11 @@ abstract class _CreateProductGallery extends CreateProductGalleryState {
   Map<String, List<String?>> get images;
   @override
   Map<String, List<Galleries?>> get listOfUrls;
+
+  /// Create a copy of CreateProductGalleryState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CreateProductGalleryImplCopyWith<_$CreateProductGalleryImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

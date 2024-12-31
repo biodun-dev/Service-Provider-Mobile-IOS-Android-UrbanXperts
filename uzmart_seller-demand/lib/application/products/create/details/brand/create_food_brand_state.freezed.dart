@@ -21,7 +21,9 @@ mixin _$CreateFoodBrandState {
   TextEditingController? get brandController =>
       throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CreateFoodBrandState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CreateFoodBrandStateCopyWith<CreateFoodBrandState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -49,6 +51,8 @@ class _$CreateFoodBrandStateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CreateFoodBrandState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -95,6 +99,8 @@ class __$$CreateFoodBrandStateImplCopyWithImpl<$Res>
       $Res Function(_$CreateFoodBrandStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CreateFoodBrandState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -168,7 +174,9 @@ class _$CreateFoodBrandStateImpl extends _CreateFoodBrandState {
       activeIndex,
       brandController);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CreateFoodBrandState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CreateFoodBrandStateImplCopyWith<_$CreateFoodBrandStateImpl>
@@ -191,8 +199,11 @@ abstract class _CreateFoodBrandState extends CreateFoodBrandState {
   int get activeIndex;
   @override
   TextEditingController? get brandController;
+
+  /// Create a copy of CreateFoodBrandState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CreateFoodBrandStateImplCopyWith<_$CreateFoodBrandStateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

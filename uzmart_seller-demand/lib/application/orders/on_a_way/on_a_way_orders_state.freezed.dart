@@ -20,7 +20,9 @@ mixin _$OnAWayOrdersState {
   List<OrderData> get orders => throw _privateConstructorUsedError;
   int get totalCount => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of OnAWayOrdersState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $OnAWayOrdersStateCopyWith<OnAWayOrdersState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -44,6 +46,8 @@ class _$OnAWayOrdersStateCopyWithImpl<$Res, $Val extends OnAWayOrdersState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of OnAWayOrdersState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -87,6 +91,8 @@ class __$$OnAWayOrdersStateImplCopyWithImpl<$Res>
       $Res Function(_$OnAWayOrdersStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of OnAWayOrdersState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -158,7 +164,9 @@ class _$OnAWayOrdersStateImpl extends _OnAWayOrdersState {
   int get hashCode => Object.hash(runtimeType, isLoading,
       const DeepCollectionEquality().hash(_orders), totalCount);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of OnAWayOrdersState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$OnAWayOrdersStateImplCopyWith<_$OnAWayOrdersStateImpl> get copyWith =>
@@ -179,8 +187,11 @@ abstract class _OnAWayOrdersState extends OnAWayOrdersState {
   List<OrderData> get orders;
   @override
   int get totalCount;
+
+  /// Create a copy of OnAWayOrdersState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$OnAWayOrdersStateImplCopyWith<_$OnAWayOrdersStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

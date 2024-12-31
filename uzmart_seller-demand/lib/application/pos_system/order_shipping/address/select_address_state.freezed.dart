@@ -23,7 +23,9 @@ mixin _$SelectAddressState {
   GoogleMapController? get mapController => throw _privateConstructorUsedError;
   LocationData? get location => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SelectAddressState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $SelectAddressStateCopyWith<SelectAddressState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -53,6 +55,8 @@ class _$SelectAddressStateCopyWithImpl<$Res, $Val extends SelectAddressState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of SelectAddressState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -117,6 +121,8 @@ class __$$SelectAddressStateImplCopyWithImpl<$Res>
       $Res Function(_$SelectAddressStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of SelectAddressState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -226,7 +232,9 @@ class _$SelectAddressStateImpl extends _SelectAddressState {
       mapController,
       location);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of SelectAddressState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$SelectAddressStateImplCopyWith<_$SelectAddressStateImpl> get copyWith =>
@@ -256,8 +264,11 @@ abstract class _SelectAddressState extends SelectAddressState {
   GoogleMapController? get mapController;
   @override
   LocationData? get location;
+
+  /// Create a copy of SelectAddressState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SelectAddressStateImplCopyWith<_$SelectAddressStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -20,7 +20,9 @@ mixin _$EditGiftCardState {
   bool get active => throw _privateConstructorUsedError;
   GiftCardData? get giftCardData => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditGiftCardState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $EditGiftCardStateCopyWith<EditGiftCardState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -44,6 +46,8 @@ class _$EditGiftCardStateCopyWithImpl<$Res, $Val extends EditGiftCardState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of EditGiftCardState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -87,6 +91,8 @@ class __$$EditGiftCardStateImplCopyWithImpl<$Res>
       $Res Function(_$EditGiftCardStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of EditGiftCardState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -147,7 +153,9 @@ class _$EditGiftCardStateImpl extends _EditGiftCardState {
   @override
   int get hashCode => Object.hash(runtimeType, isLoading, active, giftCardData);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of EditGiftCardState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$EditGiftCardStateImplCopyWith<_$EditGiftCardStateImpl> get copyWith =>
@@ -168,8 +176,11 @@ abstract class _EditGiftCardState extends EditGiftCardState {
   bool get active;
   @override
   GiftCardData? get giftCardData;
+
+  /// Create a copy of EditGiftCardState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$EditGiftCardStateImplCopyWith<_$EditGiftCardStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

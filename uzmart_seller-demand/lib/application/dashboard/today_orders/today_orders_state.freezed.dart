@@ -20,7 +20,9 @@ mixin _$TodayOrdersState {
   List<OrderData> get todayOrders => throw _privateConstructorUsedError;
   OrderData? get lastOrder => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of TodayOrdersState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $TodayOrdersStateCopyWith<TodayOrdersState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -45,6 +47,8 @@ class _$TodayOrdersStateCopyWithImpl<$Res, $Val extends TodayOrdersState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of TodayOrdersState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -89,6 +93,8 @@ class __$$TodayOrdersStateImplCopyWithImpl<$Res>
       $Res Function(_$TodayOrdersStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of TodayOrdersState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -160,7 +166,9 @@ class _$TodayOrdersStateImpl extends _TodayOrdersState {
   int get hashCode => Object.hash(runtimeType, isLoading,
       const DeepCollectionEquality().hash(_todayOrders), lastOrder);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of TodayOrdersState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$TodayOrdersStateImplCopyWith<_$TodayOrdersStateImpl> get copyWith =>
@@ -181,8 +189,11 @@ abstract class _TodayOrdersState extends TodayOrdersState {
   List<OrderData> get todayOrders;
   @override
   OrderData? get lastOrder;
+
+  /// Create a copy of TodayOrdersState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$TodayOrdersStateImplCopyWith<_$TodayOrdersStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

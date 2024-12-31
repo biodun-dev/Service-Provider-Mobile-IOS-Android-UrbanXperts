@@ -25,7 +25,9 @@ mixin _$IncomeState {
   DateTime? get start => throw _privateConstructorUsedError;
   DateTime? get end => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of IncomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $IncomeStateCopyWith<IncomeState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -56,6 +58,8 @@ class _$IncomeStateCopyWithImpl<$Res, $Val extends IncomeState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of IncomeState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -126,6 +130,8 @@ class __$$IncomeStateImplCopyWithImpl<$Res>
       _$IncomeStateImpl _value, $Res Function(_$IncomeStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of IncomeState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -261,7 +267,9 @@ class _$IncomeStateImpl extends _IncomeState {
       start,
       end);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of IncomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$IncomeStateImplCopyWith<_$IncomeStateImpl> get copyWith =>
@@ -293,8 +301,11 @@ abstract class _IncomeState extends IncomeState {
   DateTime? get start;
   @override
   DateTime? get end;
+
+  /// Create a copy of IncomeState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$IncomeStateImplCopyWith<_$IncomeStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

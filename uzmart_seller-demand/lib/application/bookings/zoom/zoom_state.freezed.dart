@@ -18,7 +18,9 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$ZoomState {
   double get calendarZoom => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ZoomState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ZoomStateCopyWith<ZoomState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -41,6 +43,8 @@ class _$ZoomStateCopyWithImpl<$Res, $Val extends ZoomState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ZoomState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -74,6 +78,8 @@ class __$$ZoomStateImplCopyWithImpl<$Res>
       _$ZoomStateImpl _value, $Res Function(_$ZoomStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ZoomState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -114,7 +120,9 @@ class _$ZoomStateImpl extends _ZoomState {
   @override
   int get hashCode => Object.hash(runtimeType, calendarZoom);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ZoomState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ZoomStateImplCopyWith<_$ZoomStateImpl> get copyWith =>
@@ -127,8 +135,11 @@ abstract class _ZoomState extends ZoomState {
 
   @override
   double get calendarZoom;
+
+  /// Create a copy of ZoomState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ZoomStateImplCopyWith<_$ZoomStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

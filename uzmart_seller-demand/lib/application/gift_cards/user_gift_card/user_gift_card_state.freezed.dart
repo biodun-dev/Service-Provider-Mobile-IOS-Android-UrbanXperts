@@ -19,7 +19,9 @@ mixin _$UserGiftCardState {
   bool get isLoading => throw _privateConstructorUsedError;
   List<UserGiftCardData> get list => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of UserGiftCardState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $UserGiftCardStateCopyWith<UserGiftCardState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -43,6 +45,8 @@ class _$UserGiftCardStateCopyWithImpl<$Res, $Val extends UserGiftCardState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of UserGiftCardState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -81,6 +85,8 @@ class __$$UserGiftCardStateImplCopyWithImpl<$Res>
       $Res Function(_$UserGiftCardStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of UserGiftCardState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -139,7 +145,9 @@ class _$UserGiftCardStateImpl extends _UserGiftCardState {
   int get hashCode => Object.hash(
       runtimeType, isLoading, const DeepCollectionEquality().hash(_list));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of UserGiftCardState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$UserGiftCardStateImplCopyWith<_$UserGiftCardStateImpl> get copyWith =>
@@ -157,8 +165,11 @@ abstract class _UserGiftCardState extends UserGiftCardState {
   bool get isLoading;
   @override
   List<UserGiftCardData> get list;
+
+  /// Create a copy of UserGiftCardState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$UserGiftCardStateImplCopyWith<_$UserGiftCardStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

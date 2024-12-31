@@ -9,617 +9,6 @@
 
 part of 'app_router.dart';
 
-abstract class _$AppRouter extends RootStackRouter {
-  // ignore: unused_element
-  _$AppRouter({super.navigatorKey});
-
-  @override
-  final Map<String, PageFactory> pagesMap = {
-    AddBrandRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const AddBrandPage(),
-      );
-    },
-    AddCategoryRoute.name: (routeData) {
-      final args = routeData.argsAs<AddCategoryRouteArgs>(
-          orElse: () => const AddCategoryRouteArgs());
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: AddCategoryPage(
-          key: args.key,
-          isService: args.isService,
-        ),
-      );
-    },
-    AddDeliverymanRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const AddDeliverymanPage(),
-      );
-    },
-    AddDiscountRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const AddDiscountPage(),
-      );
-    },
-    AddExtrasRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const AddExtrasPage(),
-      );
-    },
-    AddFormRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const AddFormPage(),
-      );
-    },
-    AddGiftCardRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const AddGiftCardPage(),
-      );
-    },
-    AddLooksRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const AddLooksPage(),
-      );
-    },
-    AddMasterRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const AddMasterPage(),
-      );
-    },
-    AddMembershipRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const AddMembershipPage(),
-      );
-    },
-    AddNoteRoute.name: (routeData) {
-      final args = routeData.argsAs<AddNoteRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: AddNotePage(
-          key: args.key,
-          startTime: args.startTime,
-        ),
-      );
-    },
-    AddServiceMasterRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const AddServiceMasterPage(),
-      );
-    },
-    AddServiceRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const AddServicePage(),
-      );
-    },
-    AddressMapRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const AddressMapPage(),
-      );
-    },
-    AdsPackageRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const AdsPackagePage(),
-      );
-    },
-    AdsRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const AdsPage(),
-      );
-    },
-    AuthRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const AuthPage(),
-      );
-    },
-    BookingDetailsRoute.name: (routeData) {
-      final args = routeData.argsAs<BookingDetailsRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: BookingDetailsPage(
-          key: args.key,
-          bookingData: args.bookingData,
-        ),
-      );
-    },
-    BrandsRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const BrandsPage(),
-      );
-    },
-    CategoryRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const CategoryPage(),
-      );
-    },
-    ChatListRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const ChatListPage(),
-      );
-    },
-    ChatRoute.name: (routeData) {
-      final args = routeData.argsAs<ChatRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: ChatPage(
-          key: args.key,
-          chat: args.chat,
-        ),
-      );
-    },
-    CommentsRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const CommentsPage(),
-      );
-    },
-    CreateEventRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const CreateEventPage(),
-      );
-    },
-    CreateProductRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const CreateProductPage(),
-      );
-    },
-    CreateShopRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const CreateShopPage(),
-      );
-    },
-    CreateStoriesRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const CreateStoriesPage(),
-      );
-    },
-    DashboardRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const DashboardPage(),
-      );
-    },
-    DeliveriesRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const DeliveriesPage(),
-      );
-    },
-    DeliveryZoneRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const DeliveryZonePage(),
-      );
-    },
-    DiscountRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const DiscountPage(),
-      );
-    },
-    EditBrandRoute.name: (routeData) {
-      final args = routeData.argsAs<EditBrandRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: EditBrandPage(
-          args.onSave,
-          key: args.key,
-        ),
-      );
-    },
-    EditCategoryRoute.name: (routeData) {
-      final args = routeData.argsAs<EditCategoryRouteArgs>(
-          orElse: () => const EditCategoryRouteArgs());
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: EditCategoryPage(
-          key: args.key,
-          isService: args.isService,
-        ),
-      );
-    },
-    EditDiscountRoute.name: (routeData) {
-      final args = routeData.argsAs<EditDiscountRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: EditDiscountPage(
-          args.id,
-          key: args.key,
-        ),
-      );
-    },
-    EditExtrasRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const EditExtrasPage(),
-      );
-    },
-    EditFormRoute.name: (routeData) {
-      final args = routeData.argsAs<EditFormRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: EditFormPage(
-          key: args.key,
-          formOption: args.formOption,
-        ),
-      );
-    },
-    EditGiftCardRoute.name: (routeData) {
-      final args = routeData.argsAs<EditGiftCardRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: EditGiftCardPage(
-          key: args.key,
-          giftCardData: args.giftCardData,
-        ),
-      );
-    },
-    EditLooksRoute.name: (routeData) {
-      final args = routeData.argsAs<EditLooksRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: EditLooksPage(
-          args.id,
-          key: args.key,
-        ),
-      );
-    },
-    EditMasterRoute.name: (routeData) {
-      final args = routeData.argsAs<EditMasterRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: EditMasterPage(
-          key: args.key,
-          master: args.master,
-        ),
-      );
-    },
-    EditMembershipRoute.name: (routeData) {
-      final args = routeData.argsAs<EditMembershipRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: EditMembershipPage(
-          key: args.key,
-          membership: args.membership,
-        ),
-      );
-    },
-    EditProductRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const EditProductPage(),
-      );
-    },
-    EditProfileRoute.name: (routeData) {
-      final args = routeData.argsAs<EditProfileRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: EditProfilePage(
-          args.onSuccess,
-          key: args.key,
-        ),
-      );
-    },
-    EditServiceMasterRoute.name: (routeData) {
-      final args = routeData.argsAs<EditServiceMasterRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: EditServiceMasterPage(
-          args.id,
-          key: args.key,
-        ),
-      );
-    },
-    EditServiceRoute.name: (routeData) {
-      final args = routeData.argsAs<EditServiceRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: EditServicePage(
-          args.id,
-          key: args.key,
-        ),
-      );
-    },
-    EditShopRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const EditShopPage(),
-      );
-    },
-    EditStoriesRoute.name: (routeData) {
-      final args = routeData.argsAs<EditStoriesRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: EditStoriesPage(
-          args.onSave,
-          key: args.key,
-        ),
-      );
-    },
-    ExtrasRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const ExtrasPage(),
-      );
-    },
-    FormOptionRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const FormOptionPage(),
-      );
-    },
-    GiftCardsRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const GiftCardsPage(),
-      );
-    },
-    LooksRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const LooksPage(),
-      );
-    },
-    MainRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const MainPage(),
-      );
-    },
-    MapSearchRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const MapSearchPage(),
-      );
-    },
-    MasterGalleryRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const MasterGalleryPage(),
-      );
-    },
-    MastersRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const MastersPage(),
-      );
-    },
-    MembershipRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const MembershipPage(),
-      );
-    },
-    NoConnectionRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const NoConnectionPage(),
-      );
-    },
-    NoInternetRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const NoInternetPage(),
-      );
-    },
-    NotificationRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const NotificationPage(),
-      );
-    },
-    OrderDetailsRoute.name: (routeData) {
-      final args = routeData.argsAs<OrderDetailsRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: OrderDetailsPage(
-          key: args.key,
-          acceptedOrdersController: args.acceptedOrdersController,
-          isHistoryOrder: args.isHistoryOrder,
-          onAWayOrdersController: args.onAWayOrdersController,
-          readyOrdersController: args.readyOrdersController,
-          newOrdersController: args.newOrdersController,
-          order: args.order,
-          heroTag: args.heroTag,
-        ),
-      );
-    },
-    OrderHistoryRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const OrderHistoryPage(),
-      );
-    },
-    OrderRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const OrderPage(),
-      );
-    },
-    OrdersHomeRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const OrdersHomePage(),
-      );
-    },
-    PickupMapRoute.name: (routeData) {
-      final args = routeData.argsAs<PickupMapRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: PickupMapPage(
-          key: args.key,
-          countryId: args.countryId,
-          regionId: args.regionId,
-        ),
-      );
-    },
-    PosSystemRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const PosSystemPage(),
-      );
-    },
-    ProductsRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const ProductsPage(),
-      );
-    },
-    ProfileRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const ProfilePage(),
-      );
-    },
-    ReplaceProductRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const ReplaceProductPage(),
-      );
-    },
-    SelectBookTimeRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const SelectBookTimePage(),
-      );
-    },
-    SelectMastersRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const SelectMastersPage(),
-      );
-    },
-    ServiceCategoryRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const ServiceCategoryPage(),
-      );
-    },
-    ServiceExtrasRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const ServiceExtrasPage(),
-      );
-    },
-    ServiceMasterRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const ServiceMasterPage(),
-      );
-    },
-    ServiceRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const ServicePage(),
-      );
-    },
-    ShopLocationsRoute.name: (routeData) {
-      final args = routeData.argsAs<ShopLocationsRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: ShopLocationsPage(
-          key: args.key,
-          type: args.type,
-        ),
-      );
-    },
-    SplashRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const SplashPage(),
-      );
-    },
-    StoriesRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const StoriesPage(),
-      );
-    },
-    SubscriptionsRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const SubscriptionsPage(),
-      );
-    },
-    TransactionListRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const TransactionListPage(),
-      );
-    },
-    UserGiftCardRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const UserGiftCardPage(),
-      );
-    },
-    UserMembershipRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const UserMembershipPage(),
-      );
-    },
-    UsersRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const UsersPage(),
-      );
-    },
-    ViewMapRoute.name: (routeData) {
-      final args = routeData.argsAs<ViewMapRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: ViewMapPage(
-          args.onChanged,
-          key: args.key,
-        ),
-      );
-    },
-    WebViewRoute.name: (routeData) {
-      final args = routeData.argsAs<WebViewRouteArgs>();
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: WebViewPage(
-          key: args.key,
-          url: args.url,
-        ),
-      );
-    },
-    WorkingTimeRoute.name: (routeData) {
-      final args = routeData.argsAs<WorkingTimeRouteArgs>(
-          orElse: () => const WorkingTimeRouteArgs());
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: WorkingTimePage(
-          key: args.key,
-          onNext: args.onNext,
-        ),
-      );
-    },
-  };
-}
-
 /// generated route for
 /// [AddBrandPage]
 class AddBrandRoute extends PageRouteInfo<void> {
@@ -631,7 +20,12 @@ class AddBrandRoute extends PageRouteInfo<void> {
 
   static const String name = 'AddBrandRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const AddBrandPage();
+    },
+  );
 }
 
 /// generated route for
@@ -652,8 +46,17 @@ class AddCategoryRoute extends PageRouteInfo<AddCategoryRouteArgs> {
 
   static const String name = 'AddCategoryRoute';
 
-  static const PageInfo<AddCategoryRouteArgs> page =
-      PageInfo<AddCategoryRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<AddCategoryRouteArgs>(
+          orElse: () => const AddCategoryRouteArgs());
+      return AddCategoryPage(
+        key: args.key,
+        isService: args.isService,
+      );
+    },
+  );
 }
 
 class AddCategoryRouteArgs {
@@ -683,7 +86,12 @@ class AddDeliverymanRoute extends PageRouteInfo<void> {
 
   static const String name = 'AddDeliverymanRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const AddDeliverymanPage();
+    },
+  );
 }
 
 /// generated route for
@@ -697,7 +105,12 @@ class AddDiscountRoute extends PageRouteInfo<void> {
 
   static const String name = 'AddDiscountRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const AddDiscountPage();
+    },
+  );
 }
 
 /// generated route for
@@ -711,7 +124,12 @@ class AddExtrasRoute extends PageRouteInfo<void> {
 
   static const String name = 'AddExtrasRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const AddExtrasPage();
+    },
+  );
 }
 
 /// generated route for
@@ -725,7 +143,12 @@ class AddFormRoute extends PageRouteInfo<void> {
 
   static const String name = 'AddFormRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const AddFormPage();
+    },
+  );
 }
 
 /// generated route for
@@ -739,7 +162,12 @@ class AddGiftCardRoute extends PageRouteInfo<void> {
 
   static const String name = 'AddGiftCardRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const AddGiftCardPage();
+    },
+  );
 }
 
 /// generated route for
@@ -753,7 +181,12 @@ class AddLooksRoute extends PageRouteInfo<void> {
 
   static const String name = 'AddLooksRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const AddLooksPage();
+    },
+  );
 }
 
 /// generated route for
@@ -767,7 +200,12 @@ class AddMasterRoute extends PageRouteInfo<void> {
 
   static const String name = 'AddMasterRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const AddMasterPage();
+    },
+  );
 }
 
 /// generated route for
@@ -781,7 +219,12 @@ class AddMembershipRoute extends PageRouteInfo<void> {
 
   static const String name = 'AddMembershipRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const AddMembershipPage();
+    },
+  );
 }
 
 /// generated route for
@@ -802,8 +245,16 @@ class AddNoteRoute extends PageRouteInfo<AddNoteRouteArgs> {
 
   static const String name = 'AddNoteRoute';
 
-  static const PageInfo<AddNoteRouteArgs> page =
-      PageInfo<AddNoteRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<AddNoteRouteArgs>();
+      return AddNotePage(
+        key: args.key,
+        startTime: args.startTime,
+      );
+    },
+  );
 }
 
 class AddNoteRouteArgs {
@@ -833,7 +284,12 @@ class AddServiceMasterRoute extends PageRouteInfo<void> {
 
   static const String name = 'AddServiceMasterRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const AddServiceMasterPage();
+    },
+  );
 }
 
 /// generated route for
@@ -847,7 +303,12 @@ class AddServiceRoute extends PageRouteInfo<void> {
 
   static const String name = 'AddServiceRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const AddServicePage();
+    },
+  );
 }
 
 /// generated route for
@@ -861,7 +322,12 @@ class AddressMapRoute extends PageRouteInfo<void> {
 
   static const String name = 'AddressMapRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const AddressMapPage();
+    },
+  );
 }
 
 /// generated route for
@@ -875,7 +341,12 @@ class AdsPackageRoute extends PageRouteInfo<void> {
 
   static const String name = 'AdsPackageRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const AdsPackagePage();
+    },
+  );
 }
 
 /// generated route for
@@ -889,7 +360,12 @@ class AdsRoute extends PageRouteInfo<void> {
 
   static const String name = 'AdsRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const AdsPage();
+    },
+  );
 }
 
 /// generated route for
@@ -903,7 +379,12 @@ class AuthRoute extends PageRouteInfo<void> {
 
   static const String name = 'AuthRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const AuthPage();
+    },
+  );
 }
 
 /// generated route for
@@ -924,8 +405,16 @@ class BookingDetailsRoute extends PageRouteInfo<BookingDetailsRouteArgs> {
 
   static const String name = 'BookingDetailsRoute';
 
-  static const PageInfo<BookingDetailsRouteArgs> page =
-      PageInfo<BookingDetailsRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<BookingDetailsRouteArgs>();
+      return BookingDetailsPage(
+        key: args.key,
+        bookingData: args.bookingData,
+      );
+    },
+  );
 }
 
 class BookingDetailsRouteArgs {
@@ -955,7 +444,12 @@ class BrandsRoute extends PageRouteInfo<void> {
 
   static const String name = 'BrandsRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const BrandsPage();
+    },
+  );
 }
 
 /// generated route for
@@ -969,7 +463,12 @@ class CategoryRoute extends PageRouteInfo<void> {
 
   static const String name = 'CategoryRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const CategoryPage();
+    },
+  );
 }
 
 /// generated route for
@@ -983,7 +482,12 @@ class ChatListRoute extends PageRouteInfo<void> {
 
   static const String name = 'ChatListRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ChatListPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1004,7 +508,16 @@ class ChatRoute extends PageRouteInfo<ChatRouteArgs> {
 
   static const String name = 'ChatRoute';
 
-  static const PageInfo<ChatRouteArgs> page = PageInfo<ChatRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<ChatRouteArgs>();
+      return ChatPage(
+        key: args.key,
+        chat: args.chat,
+      );
+    },
+  );
 }
 
 class ChatRouteArgs {
@@ -1034,7 +547,12 @@ class CommentsRoute extends PageRouteInfo<void> {
 
   static const String name = 'CommentsRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const CommentsPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1048,7 +566,12 @@ class CreateEventRoute extends PageRouteInfo<void> {
 
   static const String name = 'CreateEventRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const CreateEventPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1062,7 +585,12 @@ class CreateProductRoute extends PageRouteInfo<void> {
 
   static const String name = 'CreateProductRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const CreateProductPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1076,7 +604,12 @@ class CreateShopRoute extends PageRouteInfo<void> {
 
   static const String name = 'CreateShopRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const CreateShopPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1090,7 +623,12 @@ class CreateStoriesRoute extends PageRouteInfo<void> {
 
   static const String name = 'CreateStoriesRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const CreateStoriesPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1104,7 +642,12 @@ class DashboardRoute extends PageRouteInfo<void> {
 
   static const String name = 'DashboardRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const DashboardPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1118,7 +661,12 @@ class DeliveriesRoute extends PageRouteInfo<void> {
 
   static const String name = 'DeliveriesRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const DeliveriesPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1132,7 +680,12 @@ class DeliveryZoneRoute extends PageRouteInfo<void> {
 
   static const String name = 'DeliveryZoneRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const DeliveryZonePage();
+    },
+  );
 }
 
 /// generated route for
@@ -1146,7 +699,12 @@ class DiscountRoute extends PageRouteInfo<void> {
 
   static const String name = 'DiscountRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const DiscountPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1167,8 +725,16 @@ class EditBrandRoute extends PageRouteInfo<EditBrandRouteArgs> {
 
   static const String name = 'EditBrandRoute';
 
-  static const PageInfo<EditBrandRouteArgs> page =
-      PageInfo<EditBrandRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<EditBrandRouteArgs>();
+      return EditBrandPage(
+        args.onSave,
+        key: args.key,
+      );
+    },
+  );
 }
 
 class EditBrandRouteArgs {
@@ -1205,8 +771,17 @@ class EditCategoryRoute extends PageRouteInfo<EditCategoryRouteArgs> {
 
   static const String name = 'EditCategoryRoute';
 
-  static const PageInfo<EditCategoryRouteArgs> page =
-      PageInfo<EditCategoryRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<EditCategoryRouteArgs>(
+          orElse: () => const EditCategoryRouteArgs());
+      return EditCategoryPage(
+        key: args.key,
+        isService: args.isService,
+      );
+    },
+  );
 }
 
 class EditCategoryRouteArgs {
@@ -1243,8 +818,16 @@ class EditDiscountRoute extends PageRouteInfo<EditDiscountRouteArgs> {
 
   static const String name = 'EditDiscountRoute';
 
-  static const PageInfo<EditDiscountRouteArgs> page =
-      PageInfo<EditDiscountRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<EditDiscountRouteArgs>();
+      return EditDiscountPage(
+        args.id,
+        key: args.key,
+      );
+    },
+  );
 }
 
 class EditDiscountRouteArgs {
@@ -1274,7 +857,12 @@ class EditExtrasRoute extends PageRouteInfo<void> {
 
   static const String name = 'EditExtrasRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const EditExtrasPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1295,8 +883,16 @@ class EditFormRoute extends PageRouteInfo<EditFormRouteArgs> {
 
   static const String name = 'EditFormRoute';
 
-  static const PageInfo<EditFormRouteArgs> page =
-      PageInfo<EditFormRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<EditFormRouteArgs>();
+      return EditFormPage(
+        key: args.key,
+        formOption: args.formOption,
+      );
+    },
+  );
 }
 
 class EditFormRouteArgs {
@@ -1333,8 +929,16 @@ class EditGiftCardRoute extends PageRouteInfo<EditGiftCardRouteArgs> {
 
   static const String name = 'EditGiftCardRoute';
 
-  static const PageInfo<EditGiftCardRouteArgs> page =
-      PageInfo<EditGiftCardRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<EditGiftCardRouteArgs>();
+      return EditGiftCardPage(
+        key: args.key,
+        giftCardData: args.giftCardData,
+      );
+    },
+  );
 }
 
 class EditGiftCardRouteArgs {
@@ -1371,8 +975,16 @@ class EditLooksRoute extends PageRouteInfo<EditLooksRouteArgs> {
 
   static const String name = 'EditLooksRoute';
 
-  static const PageInfo<EditLooksRouteArgs> page =
-      PageInfo<EditLooksRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<EditLooksRouteArgs>();
+      return EditLooksPage(
+        args.id,
+        key: args.key,
+      );
+    },
+  );
 }
 
 class EditLooksRouteArgs {
@@ -1409,8 +1021,16 @@ class EditMasterRoute extends PageRouteInfo<EditMasterRouteArgs> {
 
   static const String name = 'EditMasterRoute';
 
-  static const PageInfo<EditMasterRouteArgs> page =
-      PageInfo<EditMasterRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<EditMasterRouteArgs>();
+      return EditMasterPage(
+        key: args.key,
+        master: args.master,
+      );
+    },
+  );
 }
 
 class EditMasterRouteArgs {
@@ -1447,8 +1067,16 @@ class EditMembershipRoute extends PageRouteInfo<EditMembershipRouteArgs> {
 
   static const String name = 'EditMembershipRoute';
 
-  static const PageInfo<EditMembershipRouteArgs> page =
-      PageInfo<EditMembershipRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<EditMembershipRouteArgs>();
+      return EditMembershipPage(
+        key: args.key,
+        membership: args.membership,
+      );
+    },
+  );
 }
 
 class EditMembershipRouteArgs {
@@ -1478,14 +1106,19 @@ class EditProductRoute extends PageRouteInfo<void> {
 
   static const String name = 'EditProductRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const EditProductPage();
+    },
+  );
 }
 
 /// generated route for
 /// [EditProfilePage]
 class EditProfileRoute extends PageRouteInfo<EditProfileRouteArgs> {
   EditProfileRoute({
-    required void Function() onSuccess,
+    required VoidCallback onSuccess,
     Key? key,
     List<PageRouteInfo>? children,
   }) : super(
@@ -1499,8 +1132,16 @@ class EditProfileRoute extends PageRouteInfo<EditProfileRouteArgs> {
 
   static const String name = 'EditProfileRoute';
 
-  static const PageInfo<EditProfileRouteArgs> page =
-      PageInfo<EditProfileRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<EditProfileRouteArgs>();
+      return EditProfilePage(
+        args.onSuccess,
+        key: args.key,
+      );
+    },
+  );
 }
 
 class EditProfileRouteArgs {
@@ -1509,7 +1150,7 @@ class EditProfileRouteArgs {
     this.key,
   });
 
-  final void Function() onSuccess;
+  final VoidCallback onSuccess;
 
   final Key? key;
 
@@ -1537,8 +1178,16 @@ class EditServiceMasterRoute extends PageRouteInfo<EditServiceMasterRouteArgs> {
 
   static const String name = 'EditServiceMasterRoute';
 
-  static const PageInfo<EditServiceMasterRouteArgs> page =
-      PageInfo<EditServiceMasterRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<EditServiceMasterRouteArgs>();
+      return EditServiceMasterPage(
+        args.id,
+        key: args.key,
+      );
+    },
+  );
 }
 
 class EditServiceMasterRouteArgs {
@@ -1575,8 +1224,16 @@ class EditServiceRoute extends PageRouteInfo<EditServiceRouteArgs> {
 
   static const String name = 'EditServiceRoute';
 
-  static const PageInfo<EditServiceRouteArgs> page =
-      PageInfo<EditServiceRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<EditServiceRouteArgs>();
+      return EditServicePage(
+        args.id,
+        key: args.key,
+      );
+    },
+  );
 }
 
 class EditServiceRouteArgs {
@@ -1606,7 +1263,12 @@ class EditShopRoute extends PageRouteInfo<void> {
 
   static const String name = 'EditShopRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const EditShopPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1627,8 +1289,16 @@ class EditStoriesRoute extends PageRouteInfo<EditStoriesRouteArgs> {
 
   static const String name = 'EditStoriesRoute';
 
-  static const PageInfo<EditStoriesRouteArgs> page =
-      PageInfo<EditStoriesRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<EditStoriesRouteArgs>();
+      return EditStoriesPage(
+        args.onSave,
+        key: args.key,
+      );
+    },
+  );
 }
 
 class EditStoriesRouteArgs {
@@ -1658,7 +1328,12 @@ class ExtrasRoute extends PageRouteInfo<void> {
 
   static const String name = 'ExtrasRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ExtrasPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1672,7 +1347,12 @@ class FormOptionRoute extends PageRouteInfo<void> {
 
   static const String name = 'FormOptionRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const FormOptionPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1686,7 +1366,12 @@ class GiftCardsRoute extends PageRouteInfo<void> {
 
   static const String name = 'GiftCardsRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const GiftCardsPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1700,7 +1385,12 @@ class LooksRoute extends PageRouteInfo<void> {
 
   static const String name = 'LooksRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const LooksPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1714,7 +1404,12 @@ class MainRoute extends PageRouteInfo<void> {
 
   static const String name = 'MainRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const MainPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1728,7 +1423,12 @@ class MapSearchRoute extends PageRouteInfo<void> {
 
   static const String name = 'MapSearchRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const MapSearchPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1742,7 +1442,12 @@ class MasterGalleryRoute extends PageRouteInfo<void> {
 
   static const String name = 'MasterGalleryRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const MasterGalleryPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1756,7 +1461,12 @@ class MastersRoute extends PageRouteInfo<void> {
 
   static const String name = 'MastersRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const MastersPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1770,7 +1480,12 @@ class MembershipRoute extends PageRouteInfo<void> {
 
   static const String name = 'MembershipRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const MembershipPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1784,7 +1499,12 @@ class NoConnectionRoute extends PageRouteInfo<void> {
 
   static const String name = 'NoConnectionRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const NoConnectionPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1798,7 +1518,12 @@ class NoInternetRoute extends PageRouteInfo<void> {
 
   static const String name = 'NoInternetRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const NoInternetPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1812,7 +1537,12 @@ class NotificationRoute extends PageRouteInfo<void> {
 
   static const String name = 'NotificationRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const NotificationPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1845,8 +1575,22 @@ class OrderDetailsRoute extends PageRouteInfo<OrderDetailsRouteArgs> {
 
   static const String name = 'OrderDetailsRoute';
 
-  static const PageInfo<OrderDetailsRouteArgs> page =
-      PageInfo<OrderDetailsRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<OrderDetailsRouteArgs>();
+      return OrderDetailsPage(
+        key: args.key,
+        acceptedOrdersController: args.acceptedOrdersController,
+        isHistoryOrder: args.isHistoryOrder,
+        onAWayOrdersController: args.onAWayOrdersController,
+        readyOrdersController: args.readyOrdersController,
+        newOrdersController: args.newOrdersController,
+        order: args.order,
+        heroTag: args.heroTag,
+      );
+    },
+  );
 }
 
 class OrderDetailsRouteArgs {
@@ -1894,7 +1638,12 @@ class OrderHistoryRoute extends PageRouteInfo<void> {
 
   static const String name = 'OrderHistoryRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const OrderHistoryPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1908,7 +1657,12 @@ class OrderRoute extends PageRouteInfo<void> {
 
   static const String name = 'OrderRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const OrderPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1922,7 +1676,12 @@ class OrdersHomeRoute extends PageRouteInfo<void> {
 
   static const String name = 'OrdersHomeRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const OrdersHomePage();
+    },
+  );
 }
 
 /// generated route for
@@ -1945,8 +1704,17 @@ class PickupMapRoute extends PageRouteInfo<PickupMapRouteArgs> {
 
   static const String name = 'PickupMapRoute';
 
-  static const PageInfo<PickupMapRouteArgs> page =
-      PageInfo<PickupMapRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<PickupMapRouteArgs>();
+      return PickupMapPage(
+        key: args.key,
+        countryId: args.countryId,
+        regionId: args.regionId,
+      );
+    },
+  );
 }
 
 class PickupMapRouteArgs {
@@ -1979,7 +1747,12 @@ class PosSystemRoute extends PageRouteInfo<void> {
 
   static const String name = 'PosSystemRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const PosSystemPage();
+    },
+  );
 }
 
 /// generated route for
@@ -1993,7 +1766,12 @@ class ProductsRoute extends PageRouteInfo<void> {
 
   static const String name = 'ProductsRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ProductsPage();
+    },
+  );
 }
 
 /// generated route for
@@ -2007,7 +1785,12 @@ class ProfileRoute extends PageRouteInfo<void> {
 
   static const String name = 'ProfileRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ProfilePage();
+    },
+  );
 }
 
 /// generated route for
@@ -2021,7 +1804,12 @@ class ReplaceProductRoute extends PageRouteInfo<void> {
 
   static const String name = 'ReplaceProductRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ReplaceProductPage();
+    },
+  );
 }
 
 /// generated route for
@@ -2035,7 +1823,12 @@ class SelectBookTimeRoute extends PageRouteInfo<void> {
 
   static const String name = 'SelectBookTimeRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const SelectBookTimePage();
+    },
+  );
 }
 
 /// generated route for
@@ -2049,7 +1842,12 @@ class SelectMastersRoute extends PageRouteInfo<void> {
 
   static const String name = 'SelectMastersRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const SelectMastersPage();
+    },
+  );
 }
 
 /// generated route for
@@ -2063,7 +1861,12 @@ class ServiceCategoryRoute extends PageRouteInfo<void> {
 
   static const String name = 'ServiceCategoryRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ServiceCategoryPage();
+    },
+  );
 }
 
 /// generated route for
@@ -2077,7 +1880,12 @@ class ServiceExtrasRoute extends PageRouteInfo<void> {
 
   static const String name = 'ServiceExtrasRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ServiceExtrasPage();
+    },
+  );
 }
 
 /// generated route for
@@ -2091,7 +1899,12 @@ class ServiceMasterRoute extends PageRouteInfo<void> {
 
   static const String name = 'ServiceMasterRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ServiceMasterPage();
+    },
+  );
 }
 
 /// generated route for
@@ -2105,7 +1918,12 @@ class ServiceRoute extends PageRouteInfo<void> {
 
   static const String name = 'ServiceRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ServicePage();
+    },
+  );
 }
 
 /// generated route for
@@ -2126,8 +1944,16 @@ class ShopLocationsRoute extends PageRouteInfo<ShopLocationsRouteArgs> {
 
   static const String name = 'ShopLocationsRoute';
 
-  static const PageInfo<ShopLocationsRouteArgs> page =
-      PageInfo<ShopLocationsRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<ShopLocationsRouteArgs>();
+      return ShopLocationsPage(
+        key: args.key,
+        type: args.type,
+      );
+    },
+  );
 }
 
 class ShopLocationsRouteArgs {
@@ -2157,7 +1983,12 @@ class SplashRoute extends PageRouteInfo<void> {
 
   static const String name = 'SplashRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const SplashPage();
+    },
+  );
 }
 
 /// generated route for
@@ -2171,7 +2002,12 @@ class StoriesRoute extends PageRouteInfo<void> {
 
   static const String name = 'StoriesRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const StoriesPage();
+    },
+  );
 }
 
 /// generated route for
@@ -2185,7 +2021,12 @@ class SubscriptionsRoute extends PageRouteInfo<void> {
 
   static const String name = 'SubscriptionsRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const SubscriptionsPage();
+    },
+  );
 }
 
 /// generated route for
@@ -2199,7 +2040,12 @@ class TransactionListRoute extends PageRouteInfo<void> {
 
   static const String name = 'TransactionListRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const TransactionListPage();
+    },
+  );
 }
 
 /// generated route for
@@ -2213,7 +2059,12 @@ class UserGiftCardRoute extends PageRouteInfo<void> {
 
   static const String name = 'UserGiftCardRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const UserGiftCardPage();
+    },
+  );
 }
 
 /// generated route for
@@ -2227,7 +2078,12 @@ class UserMembershipRoute extends PageRouteInfo<void> {
 
   static const String name = 'UserMembershipRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const UserMembershipPage();
+    },
+  );
 }
 
 /// generated route for
@@ -2241,14 +2097,19 @@ class UsersRoute extends PageRouteInfo<void> {
 
   static const String name = 'UsersRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const UsersPage();
+    },
+  );
 }
 
 /// generated route for
 /// [ViewMapPage]
 class ViewMapRoute extends PageRouteInfo<ViewMapRouteArgs> {
   ViewMapRoute({
-    required void Function() onChanged,
+    required VoidCallback onChanged,
     Key? key,
     List<PageRouteInfo>? children,
   }) : super(
@@ -2262,8 +2123,16 @@ class ViewMapRoute extends PageRouteInfo<ViewMapRouteArgs> {
 
   static const String name = 'ViewMapRoute';
 
-  static const PageInfo<ViewMapRouteArgs> page =
-      PageInfo<ViewMapRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<ViewMapRouteArgs>();
+      return ViewMapPage(
+        args.onChanged,
+        key: args.key,
+      );
+    },
+  );
 }
 
 class ViewMapRouteArgs {
@@ -2272,7 +2141,7 @@ class ViewMapRouteArgs {
     this.key,
   });
 
-  final void Function() onChanged;
+  final VoidCallback onChanged;
 
   final Key? key;
 
@@ -2300,8 +2169,16 @@ class WebViewRoute extends PageRouteInfo<WebViewRouteArgs> {
 
   static const String name = 'WebViewRoute';
 
-  static const PageInfo<WebViewRouteArgs> page =
-      PageInfo<WebViewRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<WebViewRouteArgs>();
+      return WebViewPage(
+        key: args.key,
+        url: args.url,
+      );
+    },
+  );
 }
 
 class WebViewRouteArgs {
@@ -2325,7 +2202,7 @@ class WebViewRouteArgs {
 class WorkingTimeRoute extends PageRouteInfo<WorkingTimeRouteArgs> {
   WorkingTimeRoute({
     Key? key,
-    void Function()? onNext,
+    VoidCallback? onNext,
     List<PageRouteInfo>? children,
   }) : super(
           WorkingTimeRoute.name,
@@ -2338,8 +2215,17 @@ class WorkingTimeRoute extends PageRouteInfo<WorkingTimeRouteArgs> {
 
   static const String name = 'WorkingTimeRoute';
 
-  static const PageInfo<WorkingTimeRouteArgs> page =
-      PageInfo<WorkingTimeRouteArgs>(name);
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      final args = data.argsAs<WorkingTimeRouteArgs>(
+          orElse: () => const WorkingTimeRouteArgs());
+      return WorkingTimePage(
+        key: args.key,
+        onNext: args.onNext,
+      );
+    },
+  );
 }
 
 class WorkingTimeRouteArgs {
@@ -2350,7 +2236,7 @@ class WorkingTimeRouteArgs {
 
   final Key? key;
 
-  final void Function()? onNext;
+  final VoidCallback? onNext;
 
   @override
   String toString() {

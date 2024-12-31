@@ -20,7 +20,9 @@ mixin _$AddMembershipState {
   bool get isLoading => throw _privateConstructorUsedError;
   MembershipData? get membership => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AddMembershipState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $AddMembershipStateCopyWith<AddMembershipState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -45,6 +47,8 @@ class _$AddMembershipStateCopyWithImpl<$Res, $Val extends AddMembershipState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of AddMembershipState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -89,6 +93,8 @@ class __$$AddMembershipStateImplCopyWithImpl<$Res>
       $Res Function(_$AddMembershipStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AddMembershipState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -159,7 +165,9 @@ class _$AddMembershipStateImpl extends _AddMembershipState {
   int get hashCode => Object.hash(runtimeType,
       const DeepCollectionEquality().hash(_services), isLoading, membership);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AddMembershipState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$AddMembershipStateImplCopyWith<_$AddMembershipStateImpl> get copyWith =>
@@ -180,8 +188,11 @@ abstract class _AddMembershipState extends AddMembershipState {
   bool get isLoading;
   @override
   MembershipData? get membership;
+
+  /// Create a copy of AddMembershipState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AddMembershipStateImplCopyWith<_$AddMembershipStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

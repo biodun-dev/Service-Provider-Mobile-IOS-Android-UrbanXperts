@@ -21,7 +21,9 @@ mixin _$DeliverymenState {
   List<UserData> get users => throw _privateConstructorUsedError;
   int get statusIndex => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DeliverymenState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DeliverymenStateCopyWith<DeliverymenState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -46,6 +48,8 @@ class _$DeliverymenStateCopyWithImpl<$Res, $Val extends DeliverymenState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DeliverymenState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -95,6 +99,8 @@ class __$$DeliverymenStateImplCopyWithImpl<$Res>
       $Res Function(_$DeliverymenStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of DeliverymenState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -177,7 +183,9 @@ class _$DeliverymenStateImpl extends _DeliverymenState {
   int get hashCode => Object.hash(runtimeType, isLoading, isUpdate,
       const DeepCollectionEquality().hash(_users), statusIndex);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DeliverymenState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DeliverymenStateImplCopyWith<_$DeliverymenStateImpl> get copyWith =>
@@ -201,8 +209,11 @@ abstract class _DeliverymenState extends DeliverymenState {
   List<UserData> get users;
   @override
   int get statusIndex;
+
+  /// Create a copy of DeliverymenState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DeliverymenStateImplCopyWith<_$DeliverymenStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

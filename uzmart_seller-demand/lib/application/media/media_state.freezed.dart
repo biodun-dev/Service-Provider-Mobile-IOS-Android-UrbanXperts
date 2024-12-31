@@ -20,7 +20,9 @@ mixin _$MediaState {
   String? get videoPath => throw _privateConstructorUsedError;
   String? get imagePath => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MediaState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MediaStateCopyWith<MediaState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -44,6 +46,8 @@ class _$MediaStateCopyWithImpl<$Res, $Val extends MediaState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MediaState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -87,6 +91,8 @@ class __$$MediaStateImplCopyWithImpl<$Res>
       _$MediaStateImpl _value, $Res Function(_$MediaStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MediaState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -148,7 +154,9 @@ class _$MediaStateImpl implements _MediaState {
   @override
   int get hashCode => Object.hash(runtimeType, isLoading, videoPath, imagePath);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MediaState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MediaStateImplCopyWith<_$MediaStateImpl> get copyWith =>
@@ -167,8 +175,11 @@ abstract class _MediaState implements MediaState {
   String? get videoPath;
   @override
   String? get imagePath;
+
+  /// Create a copy of MediaState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MediaStateImplCopyWith<_$MediaStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

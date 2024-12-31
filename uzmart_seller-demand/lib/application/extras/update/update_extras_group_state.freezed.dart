@@ -18,7 +18,9 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$UpdateExtrasGroupState {
   bool get isLoading => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of UpdateExtrasGroupState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $UpdateExtrasGroupStateCopyWith<UpdateExtrasGroupState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -43,6 +45,8 @@ class _$UpdateExtrasGroupStateCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of UpdateExtrasGroupState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -79,6 +83,8 @@ class __$$UpdateExtrasGroupStateImplCopyWithImpl<$Res>
       $Res Function(_$UpdateExtrasGroupStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of UpdateExtrasGroupState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -119,7 +125,9 @@ class _$UpdateExtrasGroupStateImpl extends _UpdateExtrasGroupState {
   @override
   int get hashCode => Object.hash(runtimeType, isLoading);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of UpdateExtrasGroupState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$UpdateExtrasGroupStateImplCopyWith<_$UpdateExtrasGroupStateImpl>
@@ -134,8 +142,11 @@ abstract class _UpdateExtrasGroupState extends UpdateExtrasGroupState {
 
   @override
   bool get isLoading;
+
+  /// Create a copy of UpdateExtrasGroupState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$UpdateExtrasGroupStateImplCopyWith<_$UpdateExtrasGroupStateImpl>
       get copyWith => throw _privateConstructorUsedError;
 }

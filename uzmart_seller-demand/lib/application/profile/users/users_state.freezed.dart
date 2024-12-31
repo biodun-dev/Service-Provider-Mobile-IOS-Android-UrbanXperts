@@ -25,7 +25,9 @@ mixin _$UsersState {
   bool get isLoading => throw _privateConstructorUsedError;
   UserData? get selectedUser => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of UsersState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $UsersStateCopyWith<UsersState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -56,6 +58,8 @@ class _$UsersStateCopyWithImpl<$Res, $Val extends UsersState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of UsersState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -126,6 +130,8 @@ class __$$UsersStateImplCopyWithImpl<$Res>
       _$UsersStateImpl _value, $Res Function(_$UsersStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of UsersState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -242,7 +248,9 @@ class _$UsersStateImpl extends _UsersState {
       isLoading,
       selectedUser);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of UsersState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$UsersStateImplCopyWith<_$UsersStateImpl> get copyWith =>
@@ -274,8 +282,11 @@ abstract class _UsersState extends UsersState {
   bool get isLoading;
   @override
   UserData? get selectedUser;
+
+  /// Create a copy of UsersState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$UsersStateImplCopyWith<_$UsersStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -25,7 +25,9 @@ mixin _$OrderStatusState {
   TextEditingController? get textEditingController =>
       throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of OrderStatusState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $OrderStatusStateCopyWith<OrderStatusState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -56,6 +58,8 @@ class _$OrderStatusStateCopyWithImpl<$Res, $Val extends OrderStatusState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of OrderStatusState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -126,6 +130,8 @@ class __$$OrderStatusStateImplCopyWithImpl<$Res>
       $Res Function(_$OrderStatusStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of OrderStatusState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -245,7 +251,9 @@ class _$OrderStatusStateImpl extends _OrderStatusState {
       editIndex,
       textEditingController);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of OrderStatusState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$OrderStatusStateImplCopyWith<_$OrderStatusStateImpl> get copyWith =>
@@ -279,8 +287,11 @@ abstract class _OrderStatusState extends OrderStatusState {
   int? get editIndex;
   @override
   TextEditingController? get textEditingController;
+
+  /// Create a copy of OrderStatusState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$OrderStatusStateImplCopyWith<_$OrderStatusStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
