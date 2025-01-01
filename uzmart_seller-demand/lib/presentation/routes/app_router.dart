@@ -7,6 +7,7 @@ import '../pages/pages.dart';
 import '../pages/profile/service_extras/add/add_extras_page.dart';
 import '../pages/profile/service_extras/edit/edit_extras_page.dart';
 import '../pages/profile/service_extras/service_extras_page.dart';
+import 'package:flutter/cupertino.dart';
 part 'app_router.gr.dart';
 
 @AutoRouterConfig()
@@ -94,4 +95,5 @@ class AppRouter extends _$AppRouter {
     CupertinoRoute(path: '/add-extras', page: AddExtrasRoute.page),
     CupertinoRoute(path: '/edit-extras', page: EditExtrasRoute.page),
   ];
+  
 }
