@@ -389,7 +389,7 @@
 				DEVELOPMENT_TEAM = HTUB57XJ3K;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Demand24 Seller";
+				INFOPLIST_KEY_CFBundleDisplayName = "UrbanXperts Seller";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -531,7 +531,7 @@
 				DEVELOPMENT_TEAM = HTUB57XJ3K;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Demand24 Seller";
+				INFOPLIST_KEY_CFBundleDisplayName = "UrbanXperts Seller";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -563,7 +563,7 @@
 				DEVELOPMENT_TEAM = HTUB57XJ3K;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Demand24 Seller";
+				INFOPLIST_KEY_CFBundleDisplayName = "UrbanXperts Seller";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

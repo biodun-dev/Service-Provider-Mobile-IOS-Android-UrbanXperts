@@ -323,15 +323,9 @@ abstract class AppHelpers {
     return DropDownValues.genderList[gender! - 1];
   }
 
-  static String getAppName() {
-    final List<SettingsData> settings = LocalStorage.getSettingsList();
-    for (final setting in settings) {
-      if (setting.key == 'title') {
-        return setting.value ?? 'Yelpos';
-      }
-    }
-    return 'Yelpos';
-  }
+static String getAppName() {
+  return "UrbanXperts"; // Replace with the desired app name
+}
 
   static bool getPhoneRequired() {
     final List<SettingsData> settings = LocalStorage.getSettingsList();
